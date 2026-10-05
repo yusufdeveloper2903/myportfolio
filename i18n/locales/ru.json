@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Главная",
+    "work": "Проекты",
+    "experience": "Опыт",
+    "blog": "Блог",
+    "contact": "Контакты",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню",
+    "skipToContent": "Перейти к содержимому",
+    "primary": "Основная"
+  },
+  "theme": {
+    "toggle": "Сменить тему"
+  },
+  "locale": {
+    "label": "Язык"
+  },
+  "hero": {
+    "available": "Открыт к новым проектам",
+    "unavailable": "Сейчас не беру новые проекты",
+    "role": "Senior Full-Stack Engineer",
+    "title": "Создаю быстрые и масштабируемые веб-продукты — от базы данных до пикселя.",
+    "subtitle": "Full-stack инженер со специализацией на TypeScript, Vue/Nuxt и Node.js. Превращаю сложные требования в чистую архитектуру и удобные интерфейсы.",
+    "ctaWork": "Смотреть проекты",
+    "ctaContact": "Связаться"
+  },
+  "bento": {
+    "featured": "Избранный проект",
+    "years": "Лет в веб-разработке",
+    "basedIn": "Локация",
+    "location": "Ташкент, Узбекистан",
+    "localTime": "Местное время",
+    "stack": "Основной стек",
+    "latestPost": "Последняя статья"
+  },
+  "stack": {
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps"
+    }
+  },
+  "work": {
+    "eyebrow": "Избранные работы",
+    "title": "Проекты, которыми я горжусь",
+    "subtitle": "Кейсы: задача, моя роль, архитектура и результат.",
+    "viewAll": "Все проекты",
+    "viewCase": "Читать кейс",
+    "live": "Открыть сайт",
+    "source": "Исходный код",
+    "role": "Роль",
+    "year": "Год",
+    "stack": "Стек",
+    "back": "Все проекты",
+    "next": "Следующий проект"
+  },
+  "experience": {
+    "eyebrow": "Опыт",
+    "title": "Где я приносил результат",
+    "present": "Настоящее время"
+  },
+  "blog": {
+    "eyebrow": "Статьи",
+    "title": "Заметки об инженерии",
+    "subtitle": "Уроки из разработки продуктов, преподавания и запуска в продакшн.",
+    "viewAll": "Все статьи",
+    "back": "Все статьи",
+    "empty": "Пока нет статей."
+  },
+  "contact": {
+    "eyebrow": "Контакты",
+    "title": "Есть идея проекта? Давайте обсудим.",
+    "subtitle": "Обычно отвечаю в течение дня. Быстрее всего — по email или в Telegram.",
+    "copy": "Скопировать email",
+    "copied": "Скопировано!",
+    "sendEmail": "Написать письмо",
+    "downloadCv": "Скачать CV"
+  },
+  "palette": {
+    "open": "Открыть меню команд",
+    "label": "Меню команд",
+    "placeholder": "Введите команду или запрос…",
+    "empty": "Ничего не найдено.",
+    "groups": {
+      "navigation": "Навигация",
+      "projects": "Проекты",
+      "actions": "Действия",
+      "language": "Язык"
+    },
+    "actions": {
+      "toggleTheme": "Светлая / тёмная тема",
+      "copyEmail": "Скопировать email",
+      "downloadCv": "Скачать CV"
+    },
+    "hints": {
+      "navigate": "выбор",
+      "select": "открыть",
+      "close": "закрыть"
+    }
+  },
+  "footer": {
+    "rights": "Все права защищены.",
+    "builtWith": "Сделано на Nuxt, Tailwind CSS и Nuxt Content."
+  },
+  "seo": {
+    "title": "Юсуф Юлдашев — Senior Full-Stack Engineer",
+    "description": "Senior full-stack инженер: быстрые и масштабируемые веб-продукты на TypeScript, Vue/Nuxt и Node.js.",
+    "workTitle": "Проекты",
+    "workDescription": "Избранные проекты и кейсы Юсуфа Юлдашева.",
+    "blogTitle": "Блог",
+    "blogDescription": "Статьи о веб-разработке, архитектуре и полученном опыте."
+  },
+  "error": {
+    "notFound": "Страница не найдена",
+    "notFoundText": "Страница, которую вы ищете, не существует или была перемещена.",
+    "generic": "Что-то пошло не так",
+    "home": "На главную"
+  }
+}

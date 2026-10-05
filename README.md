@@ -1,52 +1,80 @@
 # myportfolio
 
-Personal portfolio of Yusuf Yuldashev — Vue 3 + Vite + TypeScript.
+Personal site of Yusuf Yuldashev — a multilingual, statically generated portfolio with
+case studies, a blog and a `⌘K` command palette.
 
-## Requirements
+**Stack:** Nuxt 4 · TypeScript · Nuxt Content v3 · Tailwind CSS v4 · @nuxtjs/i18n (EN / UZ / RU)
 
-- Node.js `>= 20.19` (see `.nvmrc`)
+## Getting started
 
-## Scripts
+```bash
+fnm use          # Node version from .nvmrc
+npm install
+npm run dev      # http://localhost:3000
+```
 
-| Command              | Description                         |
-| -------------------- | ----------------------------------- |
-| `npm install`        | Install dependencies                |
-| `npm run dev`        | Start the dev server with HMR       |
-| `npm run build`      | Type-check and build for production |
-| `npm run preview`    | Serve the production build locally  |
-| `npm run type-check` | Run `vue-tsc`                       |
-| `npm run lint`       | Lint and auto-fix with ESLint       |
-| `npm run format`     | Format `src/` with Prettier         |
-| `npm test`           | Run unit tests with Vitest          |
+| Command             | Description                                       |
+| ------------------- | ------------------------------------------------- |
+| `npm run dev`       | Dev server with HMR                               |
+| `npm run generate`  | Pre-render the whole site to `.output/public`     |
+| `npm run preview`   | Serve the generated site locally                  |
+| `npm run typecheck` | `vue-tsc` type checking (unknown components fail) |
+| `npm run lint`      | ESLint (`npm run lint:fix` to auto-fix)           |
+| `npm run format`    | Prettier                                          |
+| `npm test`          | Unit tests (Vitest)                               |
 
-## Project structure
+## Editing content
+
+Everything you are likely to change is data, not code:
+
+| What                         | Where                               |
+| ---------------------------- | ----------------------------------- |
+| Projects / case studies      | `content/<locale>/projects/*.md`    |
+| Blog posts                   | `content/<locale>/blog/*.md`        |
+| Experience timeline          | `content/<locale>/experience/*.yml` |
+| Name, email, socials, stack  | `app/data/site.ts`                  |
+| UI copy (hero, buttons, SEO) | `i18n/locales/{en,uz,ru}.json`      |
+| Images, CV, OG image         | `public/`                           |
+
+Frontmatter is validated by the schemas in `content.config.ts`. A file missing in `uz` or `ru`
+falls back to the English version automatically. Search the repo for `TODO` to find placeholders.
+
+## Architecture
 
 ```
-src/
-├── assets/
-│   ├── images/          # Images grouped by section (hero, about, portfolio, …)
-│   └── styles/
-│       ├── abstracts/   # Design tokens + mixins, auto-injected into every SFC
-│       └── main.scss    # Global reset and base styles
+app/
+├── pages/                 # Routes. Fetch data and compose sections.
+├── layouts/default.vue    # Header, footer, ⌘K palette
 ├── components/
-│   ├── layout/          # AppHeader, AppFooter
-│   ├── sections/        # One component per page section
-│   ├── portfolio/       # Portfolio-specific building blocks
-│   └── ui/              # Reusable, content-agnostic UI pieces
-├── composables/         # useScrolled, useMediaQuery, useEventListener
-├── data/                # All site content (profile, projects, services, …)
-├── types/               # Shared TypeScript types
-├── utils/               # Pure helpers (mailto, date formatting)
-├── App.vue
-└── main.ts
+│   ├── home/              # Home page sections (hero, bento, work, experience, contact)
+│   ├── project/  blog/    # Feature components
+│   ├── site/              # App shell: header, footer, theme, locale, command palette
+│   └── ui/                # Small reusable building blocks
+├── composables/           # useLocalizedContent, usePageSeo, useCommandPalette, …
+├── utils/                 # Pure, unit-tested helpers (dates, search)
+├── plugins/reveal.ts      # v-reveal scroll animation directive
+├── data/site.ts           # Locale-independent site facts
+└── assets/css/main.css    # Tailwind v4 + semantic design tokens (light/dark)
+content/                   # Markdown/YAML content per locale
+i18n/locales/              # UI translations
+server/routes/             # sitemap.xml, robots.txt (pre-rendered)
 ```
 
-### Conventions
+**Principles**
 
-- **Content lives in `src/data`.** Components render data; to add a project, service or
-  social link, edit the data file — no template changes needed.
-- **Styling:** scoped SCSS with BEM class names. Use tokens from
-  `abstracts/_variables.scss` and the `below(<breakpoint>)` mixin instead of raw values.
-- **Sections** are anchored by `SectionId` (`#home`, `#about`, …); navigation is typed
-  against it.
-- Static files that must keep their URL (e.g. the CV) go in `public/`.
+- **Pages fetch, components present.** Data is loaded in pages/layouts during pre-rendering and
+  passed down as props, so it ships in the page payload and the browser never loads the content DB.
+- **Semantic tokens only.** Components use `bg-surface`, `text-muted`, `border-line`, … — never
+  raw colors — so themes stay consistent.
+- **Accessible by default.** Skip link, focus rings, keyboard-driven palette, `prefers-reduced-motion`.
+- **SEO.** Static HTML, canonical + `hreflang` links, Open Graph tags, JSON-LD `Person`, sitemap.
+
+## Deployment
+
+The site is fully static. On Netlify, Vercel or Cloudflare Pages use:
+
+- **Build command:** `npm run generate`
+- **Output directory:** `.output/public`
+- **Environment:** `NUXT_PUBLIC_SITE_URL=https://your-domain.com` (see `.env.example`)
+
+CI (`.github/workflows/ci.yml`) runs lint, type-check, tests and a full generate on every push.

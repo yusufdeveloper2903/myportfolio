@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "work": "Loyihalar",
+    "experience": "Tajriba",
+    "blog": "Blog",
+    "contact": "Aloqa",
+    "openMenu": "Menyuni ochish",
+    "closeMenu": "Menyuni yopish",
+    "skipToContent": "Asosiy kontentga o‘tish",
+    "primary": "Asosiy"
+  },
+  "theme": {
+    "toggle": "Mavzuni almashtirish"
+  },
+  "locale": {
+    "label": "Til"
+  },
+  "hero": {
+    "available": "Yangi loyihalar uchun bo‘shman",
+    "unavailable": "Hozircha yangi loyiha olmayapman",
+    "role": "Senior Full-Stack Engineer",
+    "title": "Ma’lumotlar bazasidan tortib pikselgacha — tez va kengayuvchan veb-mahsulotlar yarataman.",
+    "subtitle": "TypeScript, Vue/Nuxt va Node.js’ga ixtisoslashgan full-stack muhandis. Murakkab talablarni toza arxitektura va foydalanish yoqimli interfeyslarga aylantiraman.",
+    "ctaWork": "Loyihalarni ko‘rish",
+    "ctaContact": "Bog‘lanish"
+  },
+  "bento": {
+    "featured": "Asosiy loyiha",
+    "years": "Yillik veb-tajriba",
+    "basedIn": "Joylashuv",
+    "location": "Toshkent, O‘zbekiston",
+    "localTime": "Mahalliy vaqt",
+    "stack": "Asosiy stack",
+    "latestPost": "So‘nggi maqola"
+  },
+  "stack": {
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps"
+    }
+  },
+  "work": {
+    "eyebrow": "Tanlangan ishlar",
+    "title": "Faxrlanadigan loyihalarim",
+    "subtitle": "Muammo, mening rolim, arxitektura va natija haqida case study’lar.",
+    "viewAll": "Barcha loyihalar",
+    "viewCase": "Case study’ni o‘qish",
+    "live": "Saytni ochish",
+    "source": "Manba kodi",
+    "role": "Rol",
+    "year": "Yil",
+    "stack": "Stack",
+    "back": "Barcha loyihalar",
+    "next": "Keyingi loyiha"
+  },
+  "experience": {
+    "eyebrow": "Tajriba",
+    "title": "Qayerda natija ko‘rsatganman",
+    "present": "Hozirgacha"
+  },
+  "blog": {
+    "eyebrow": "Maqolalar",
+    "title": "Muhandislik haqida qaydlar",
+    "subtitle": "Mahsulot qurish, o‘qitish va production’ga chiqarishdan olingan saboqlar.",
+    "viewAll": "Barcha maqolalar",
+    "back": "Barcha maqolalar",
+    "empty": "Hozircha maqolalar yo‘q."
+  },
+  "contact": {
+    "eyebrow": "Aloqa",
+    "title": "Loyiha g‘oyangiz bormi? Keling, gaplashamiz.",
+    "subtitle": "Odatda bir kun ichida javob beraman. Eng tez yo‘li — email yoki Telegram.",
+    "copy": "Emailni nusxalash",
+    "copied": "Nusxalandi!",
+    "sendEmail": "Email yuborish",
+    "downloadCv": "CV yuklab olish"
+  },
+  "palette": {
+    "open": "Buyruqlar menyusini ochish",
+    "label": "Buyruqlar menyusi",
+    "placeholder": "Buyruq yoki qidiruv so‘zini yozing…",
+    "empty": "Hech narsa topilmadi.",
+    "groups": {
+      "navigation": "Navigatsiya",
+      "projects": "Loyihalar",
+      "actions": "Amallar",
+      "language": "Til"
+    },
+    "actions": {
+      "toggleTheme": "Yorug‘ / qorong‘i mavzu",
+      "copyEmail": "Email manzilni nusxalash",
+      "downloadCv": "CV yuklab olish"
+    },
+    "hints": {
+      "navigate": "tanlash",
+      "select": "ochish",
+      "close": "yopish"
+    }
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan.",
+    "builtWith": "Nuxt, Tailwind CSS va Nuxt Content bilan yaratilgan."
+  },
+  "seo": {
+    "title": "Yusuf Yuldashev — Senior Full-Stack Engineer",
+    "description": "TypeScript, Vue/Nuxt va Node.js bilan tez va kengayuvchan veb-mahsulotlar yaratuvchi senior full-stack muhandis.",
+    "workTitle": "Loyihalar",
+    "workDescription": "Yusuf Yuldashevning tanlangan loyihalari va case study’lari.",
+    "blogTitle": "Blog",
+    "blogDescription": "Veb-muhandislik, arxitektura va olingan saboqlar haqida maqolalar."
+  },
+  "error": {
+    "notFound": "Sahifa topilmadi",
+    "notFoundText": "Siz qidirayotgan sahifa mavjud emas yoki ko‘chirilgan.",
+    "generic": "Nimadir xato ketdi",
+    "home": "Bosh sahifaga qaytish"
+  }
+}

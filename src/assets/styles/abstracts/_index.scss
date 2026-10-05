@@ -1,4 +1,0 @@
-// Compile-time only: tokens and mixins. Must never emit CSS,
-// because it is injected into every component's <style> block.
-@forward 'variables';
-@forward 'mixins';

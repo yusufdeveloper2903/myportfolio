@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "experience": "Experience",
+    "blog": "Blog",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content",
+    "primary": "Primary"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  },
+  "locale": {
+    "label": "Language"
+  },
+  "hero": {
+    "available": "Available for new projects",
+    "unavailable": "Currently not taking projects",
+    "role": "Senior Full-Stack Engineer",
+    "title": "I build fast, scalable web products — from database to pixel.",
+    "subtitle": "Full-stack engineer focused on TypeScript, Vue/Nuxt and Node.js. I turn complex requirements into clean architecture and interfaces people enjoy using.",
+    "ctaWork": "View work",
+    "ctaContact": "Get in touch"
+  },
+  "bento": {
+    "featured": "Featured project",
+    "years": "Years building for the web",
+    "basedIn": "Based in",
+    "location": "Tashkent, Uzbekistan",
+    "localTime": "Local time",
+    "stack": "Core stack",
+    "latestPost": "Latest writing"
+  },
+  "stack": {
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps"
+    }
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "title": "Projects I’m proud of",
+    "subtitle": "Case studies covering the problem, my role, the architecture and the outcome.",
+    "viewAll": "All projects",
+    "viewCase": "Read case study",
+    "live": "Live site",
+    "source": "Source code",
+    "role": "Role",
+    "year": "Year",
+    "stack": "Stack",
+    "back": "All work",
+    "next": "Next project"
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "title": "Where I’ve made an impact",
+    "present": "Present"
+  },
+  "blog": {
+    "eyebrow": "Writing",
+    "title": "Notes on engineering",
+    "subtitle": "Lessons from building products, teaching and shipping to production.",
+    "viewAll": "All posts",
+    "back": "All posts",
+    "empty": "No posts yet."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Have a project in mind? Let’s talk.",
+    "subtitle": "I usually reply within a day. The fastest way to reach me is email or Telegram.",
+    "copy": "Copy email",
+    "copied": "Copied!",
+    "sendEmail": "Send email",
+    "downloadCv": "Download CV"
+  },
+  "palette": {
+    "open": "Open command menu",
+    "label": "Command menu",
+    "placeholder": "Type a command or search…",
+    "empty": "No results found.",
+    "groups": {
+      "navigation": "Navigation",
+      "projects": "Projects",
+      "actions": "Actions",
+      "language": "Language"
+    },
+    "actions": {
+      "toggleTheme": "Toggle light / dark theme",
+      "copyEmail": "Copy email address",
+      "downloadCv": "Download CV"
+    },
+    "hints": {
+      "navigate": "navigate",
+      "select": "select",
+      "close": "close"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Nuxt, Tailwind CSS and Nuxt Content."
+  },
+  "seo": {
+    "title": "Yusuf Yuldashev — Senior Full-Stack Engineer",
+    "description": "Senior full-stack engineer building fast, scalable web products with TypeScript, Vue/Nuxt and Node.js.",
+    "workTitle": "Work",
+    "workDescription": "Selected projects and case studies by Yusuf Yuldashev.",
+    "blogTitle": "Blog",
+    "blogDescription": "Articles about web engineering, architecture and lessons learned."
+  },
+  "error": {
+    "notFound": "Page not found",
+    "notFoundText": "The page you are looking for doesn’t exist or has been moved.",
+    "generic": "Something went wrong",
+    "home": "Back to home"
+  }
+}
