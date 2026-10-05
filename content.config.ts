@@ -45,6 +45,8 @@ const experienceSchema = z.object({
   end: z.string().optional(),
   order: z.number(),
   highlights: z.array(z.string()),
+  /** Replaces `highlights` while the backend/DevOps flag is off, for entries that mention that work. */
+  frontendHighlights: z.array(z.string()).optional(),
   stack: z.array(z.string()).default([]),
 })
 

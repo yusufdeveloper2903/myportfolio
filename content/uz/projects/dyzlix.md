@@ -37,7 +37,7 @@ Yoqilg‘i — yuk tashish kompaniyasining eng katta xarajatlaridan biri. Dyzlix
 **Dyzlix frontendini noldan o‘zim qurganman va uni to‘liq boshqaraman.** Kod bazasini 2024-yil oktyabrida boshladim va uning atrofidagi hamma narsani o‘zim sozladim:
 
 - **Arxitektura** — `app → pages → modules → shared` qatlamli tuzilmasi, ma’lumot oqimi qoidalari va har bir feature amal qiladigan modul shabloni.
-- **Infratuzilma** — Vite build, TypeScript konfiguratsiyasi, staging va production uchun nginx orqali xizmat ko‘rsatuvchi multi-stage Docker image’lar, environment boshqaruvi va reliz versiyalash.
+- :if-backend[**Infratuzilma** — Vite build, TypeScript konfiguratsiyasi, staging va production uchun nginx orqali xizmat ko‘rsatuvchi multi-stage Docker image’lar, environment boshqaruvi va reliz versiyalash.] :if-backend{off}[**Build sozlamalari** — Vite build, TypeScript konfiguratsiyasi, environment boshqaruvi va reliz versiyalash.]
 - **Dasturchi tajribasi va sifat** — ESLint va Prettier, Conventional Commits, type-check, design-token, import chegaralari va bundle byudjeti darvozalariga ega git hook’lar, unit testlar va Playwright smoke harness.
 - **Dizayn tizimi** — umumiy UI kit, design tokenlar va qorong‘i mavzu.
 - **Funksiyalar** — mahsulotning katta qismi: dashboard, Fuel Book, jonli tracking board, kartalar, tranzaksiyalar, idling, huquqlar va sozlamalar.

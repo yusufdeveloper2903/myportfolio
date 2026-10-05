@@ -37,7 +37,7 @@ Fuel is one of the biggest costs for a trucking company. Dyzlix suggests the bes
 **I built the Dyzlix frontend from scratch and own it end to end.** I started the codebase in October 2024 and set up everything around it myself:
 
 - **Architecture** — the layered `app → pages → modules → shared` structure, the data-flow conventions and the module template every feature follows.
-- **Infrastructure** — Vite build, TypeScript configuration, multi-stage Docker images for staging and production served by nginx, environment handling and release versioning.
+- :if-backend[**Infrastructure** — Vite build, TypeScript configuration, multi-stage Docker images for staging and production served by nginx, environment handling and release versioning.] :if-backend{off}[**Build setup** — Vite build, TypeScript configuration, environment handling and release versioning.]
 - **Developer experience & quality** — ESLint and Prettier, Conventional Commits, git hooks with type-check, design-token, import-boundary and bundle-budget gates, unit tests and the Playwright smoke harness.
 - **Design system** — the shared UI kit, design tokens and dark mode.
 - **Features** — most of the product: dashboard, Fuel Book, live tracking board, cards, transactions, idling, permissions and settings.

@@ -18,8 +18,8 @@ export interface StackGroup {
  * Feature flags. Flip one to `true` and redeploy to show that part of the site again.
  */
 const features = {
-  /** Backend skills: the Backend stack column and the "Full-Stack" job title. */
-  backend: false,
+  /** Backend and DevOps skills: their stack columns, the "Full-Stack" job title and infrastructure work in experience and case studies. */
+  backendDevops: false,
 }
 
 export const site = {
@@ -93,9 +93,9 @@ export const site = {
 } as const
 
 /** i18n key for the job title under `hero.role` and `seo.*`. */
-export const roleKey = site.features.backend ? 'fullStack' : 'frontend'
+export const roleKey = site.features.backendDevops ? 'fullStack' : 'frontend'
 
 /** Stack groups to show, honouring the feature flags. */
 export const visibleStack = site.stack.filter(
-  (group) => site.features.backend || group.key !== 'backend',
+  (group) => site.features.backendDevops || group.key === 'frontend',
 )

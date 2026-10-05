@@ -8,4 +8,9 @@ highlights:
   - "Dyzlix yoqilg‘i boshqaruvi platformasini noldan qurganman: arxitektura, Docker/nginx infratuzilmasi, sifat darvozalari, dizayn tizimi va HERE Maps’da jonli kuzatuv."
   - "2026-yildan beri Load Up’da funksiyalar chiqaraman: jonli load board, WebRTC qo‘ng‘iroqlari, park va xavfsizlik modullariga ega yirik React 19 TMS."
   - "Mahsulotlar bo‘ylab vositalarni standartlashtirdim: Vite, TypeScript, TanStack Query, Vitest va Playwright, Conventional Commits va pre-push sifat darvozalari."
+frontendHighlights:
+  - "Bot Manager’ni noldan qurganman va unga rahbarlik qilaman (~80% commitlar): arxitektura, real vaqtli STOMP qatlami, RBAC va AQShdagi park kompaniyasi uchun Telegram’simon operatsion panel."
+  - "Dyzlix yoqilg‘i boshqaruvi platformasini noldan qurganman: arxitektura, sifat darvozalari, dizayn tizimi va HERE Maps’da jonli kuzatuv."
+  - "2026-yildan beri Load Up’da funksiyalar chiqaraman: jonli load board, WebRTC qo‘ng‘iroqlari, park va xavfsizlik modullariga ega yirik React 19 TMS."
+  - "Mahsulotlar bo‘ylab vositalarni standartlashtirdim: Vite, TypeScript, TanStack Query, Vitest va Playwright, Conventional Commits va pre-push sifat darvozalari."
 stack: [Vue 3, React 19, TypeScript, TanStack Query, Pinia, Zustand, STOMP/WebSocket, WebRTC, HERE Maps, Vitest, Playwright]

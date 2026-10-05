@@ -1,9 +1,16 @@
 <script setup lang="ts">
 import type { ExperienceEnCollectionItem } from '@nuxt/content'
 
+import { site } from '~/data/site'
+
 defineProps<{ items: ExperienceEnCollectionItem[] }>()
 
 const { t, locale } = useI18n()
+
+function highlightsOf(item: ExperienceEnCollectionItem) {
+  if (site.features.backendDevops) return item.highlights
+  return item.frontendHighlights ?? item.highlights
+}
 </script>
 
 <template>
@@ -36,7 +43,7 @@ const { t, locale } = useI18n()
           <span v-else>{{ item.company }}</span>
         </h3>
         <ul class="mt-3 flex list-disc flex-col gap-1.5 pl-5 text-muted marker:text-subtle">
-          <li v-for="highlight in item.highlights" :key="highlight">{{ highlight }}</li>
+          <li v-for="highlight in highlightsOf(item)" :key="highlight">{{ highlight }}</li>
         </ul>
         <div v-if="item.stack?.length" class="mt-4 flex flex-wrap gap-1.5">
           <TechBadge v-for="tech in item.stack" :key="tech">{{ tech }}</TechBadge>

@@ -37,10 +37,10 @@ Dispetcherlik, xavfsizlik va texnik xizmat jamoalari yuzlab haydovchilar bilan T
 
 ## Mening rolim
 
-**Bot Manager — birinchi commit’dan boshlab mening loyiham.** Repozitoriyani 2024-yil dekabrida yaratdim va butun frontend hamda uning infratuzilmasini o‘zim qurdim:
+**Bot Manager — birinchi commit’dan boshlab mening loyiham.** Repozitoriyani 2024-yil dekabrida yaratdim va :if-backend[butun frontend hamda uning infratuzilmasini o‘zim qurdim] :if-backend{off}[butun frontend’ni o‘zim qurdim]:
 
 - **Arxitektura** — `app / pages / modules / shared` qatlamlari, izolyatsiyalangan feature modullar, tiplangan API qatlami va feature flag’li lazy-load route registri.
-- **Infratuzilma** — Vite va TypeScript sozlamalari, staging va production uchun Docker image’lar, `dev` va `main` branchlardan avtomatik deploy hamda deploy’dan keyin foydalanuvchiga sahifani yangilashni taklif qiluvchi reliz aniqlash.
+- :if-backend[**Infratuzilma** — Vite va TypeScript sozlamalari, staging va production uchun Docker image’lar, `dev` va `main` branchlardan avtomatik deploy hamda deploy’dan keyin foydalanuvchiga sahifani yangilashni taklif qiluvchi reliz aniqlash.] :if-backend{off}[**Build sozlamalari** — Vite va TypeScript sozlamalari hamda deploy’dan keyin foydalanuvchiga sahifani yangilashni taklif qiluvchi reliz aniqlash.]
 - **Real vaqt va barqarorlik** — ilova bo‘ylab yagona STOMP klient, qayta ulanish strategiyasi, server qayta ishga tushishi va sessiya tugashini to‘g‘ri boshqarish.
 - **Dasturchi tajribasi** — ESLint, Prettier, husky, lint-staged, modul scope’li commitlint va type-check, testlar hamda staging build’ni ishga tushiradigan pre-push hook.
 - **Mahsulot** — umumiy UI kit va 41 ta feature modulning ko‘pchiligi: Telegram Mirror, postlar, xavfli zonalar, PTI va RBAC.

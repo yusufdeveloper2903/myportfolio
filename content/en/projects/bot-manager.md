@@ -37,10 +37,10 @@ Dispatch, safety and maintenance teams talk to hundreds of truck drivers through
 
 ## My role
 
-**Bot Manager is my project from the very first commit.** I created the repository in December 2024 and built the whole frontend and its infrastructure myself:
+**Bot Manager is my project from the very first commit.** I created the repository in December 2024 and :if-backend[built the whole frontend and its infrastructure myself] :if-backend{off}[built the whole frontend myself]:
 
 - **Architecture** — the `app / pages / modules / shared` layering, isolated feature modules, the typed API layer and the lazy-loaded route registry with feature flags.
-- **Infrastructure** — Vite and TypeScript setup, Docker images for staging and production, automatic deploys from `dev` and `main`, and release detection that prompts users to refresh after a deploy.
+- :if-backend[**Infrastructure** — Vite and TypeScript setup, Docker images for staging and production, automatic deploys from `dev` and `main`, and release detection that prompts users to refresh after a deploy.] :if-backend{off}[**Build setup** — Vite and TypeScript setup, and release detection that prompts users to refresh after a deploy.]
 - **Realtime & resilience** — the app-wide STOMP client, reconnect strategy and graceful handling of server restarts and expired sessions.
 - **Developer experience** — ESLint, Prettier, husky, lint-staged, commitlint with module-based scopes and a pre-push hook running type-check, tests and a staging build.
 - **Product** — the shared UI kit and most of the 41 feature modules, including Telegram Mirror, posts, risk zones, PTI and RBAC.

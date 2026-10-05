@@ -8,4 +8,9 @@ highlights:
   - "Создал с нуля платформу управления топливом Dyzlix: архитектура, инфраструктура Docker/nginx, гейты качества, дизайн-система и живой трекинг на HERE Maps."
   - "С 2026 года выпускаю фичи в Load Up — крупной TMS на React 19 с живой доской грузов, звонками WebRTC и модулями автопарка и безопасности."
   - "Стандартизировал тулинг между продуктами: Vite, TypeScript, TanStack Query, Vitest и Playwright, Conventional Commits и pre-push гейты качества."
+frontendHighlights:
+  - "Создал Bot Manager с нуля и веду его (~80% коммитов): архитектура, real-time слой на STOMP, RBAC и Telegram-подобная операционная панель для американской транспортной компании."
+  - "Создал с нуля платформу управления топливом Dyzlix: архитектура, гейты качества, дизайн-система и живой трекинг на HERE Maps."
+  - "С 2026 года выпускаю фичи в Load Up — крупной TMS на React 19 с живой доской грузов, звонками WebRTC и модулями автопарка и безопасности."
+  - "Стандартизировал тулинг между продуктами: Vite, TypeScript, TanStack Query, Vitest и Playwright, Conventional Commits и pre-push гейты качества."
 stack: [Vue 3, React 19, TypeScript, TanStack Query, Pinia, Zustand, STOMP/WebSocket, WebRTC, HERE Maps, Vitest, Playwright]

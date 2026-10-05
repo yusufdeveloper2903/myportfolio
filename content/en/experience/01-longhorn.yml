@@ -8,4 +8,9 @@ highlights:
   - "Built the Dyzlix fuel management platform from scratch: architecture, Docker/nginx infrastructure, quality gates, design system and live HERE Maps tracking."
   - "Since 2026 shipping features in Load Up, a large React 19 TMS with a live load board, WebRTC calling and fleet and safety modules."
   - "Standardised the toolchain across products: Vite, TypeScript, TanStack Query, Vitest and Playwright, Conventional Commits and pre-push quality gates."
+frontendHighlights:
+  - "Built Bot Manager from scratch and lead it (~80% of commits): architecture, realtime STOMP layer, RBAC and a Telegram-style operations panel for a US fleet company."
+  - "Built the Dyzlix fuel management platform from scratch: architecture, quality gates, design system and live HERE Maps tracking."
+  - "Since 2026 shipping features in Load Up, a large React 19 TMS with a live load board, WebRTC calling and fleet and safety modules."
+  - "Standardised the toolchain across products: Vite, TypeScript, TanStack Query, Vitest and Playwright, Conventional Commits and pre-push quality gates."
 stack: [Vue 3, React 19, TypeScript, TanStack Query, Pinia, Zustand, STOMP/WebSocket, WebRTC, HERE Maps, Vitest, Playwright]
