@@ -16,7 +16,19 @@ metrics:
     value: "24"
   - label: "Mening commitlarim"
     value: "250+"
-gallery: []
+gallery:
+  - src: /images/projects/load-up/dashboard.jpg
+    alt: "Operatsion dashboard: KPI’lar va 600+ haydovchining jonli xaritasi"
+    caption: "Operatsion dashboard: KPI’lar va 600+ haydovchining jonli xaritasi"
+  - src: /images/projects/load-up/update-board.jpg
+    alt: "Update Board: park holati, tirkamalar va joylashuvlar bitta virtualizatsiyalangan jadvalda"
+    caption: "Update Board: park holati, tirkamalar va joylashuvlar bitta virtualizatsiyalangan jadvalda"
+  - src: /images/projects/load-up/trips.jpg
+    alt: "Reyslar: yuklash, yetkazish va dispetcherlik holati"
+    caption: "Reyslar: yuklash, yetkazish va dispetcherlik holati"
+  - src: /images/projects/load-up/route-planner.jpg
+    alt: "HERE Maps’da tarozi punktlari bilan yuk mashinasi marshrut rejalashtiruvchisi"
+    caption: "HERE Maps’da tarozi punktlari bilan yuk mashinasi marshrut rejalashtiruvchisi"
 ---
 
 ## Mahsulot

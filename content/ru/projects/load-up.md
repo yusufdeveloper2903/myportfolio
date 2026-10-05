@@ -16,7 +16,19 @@ metrics:
     value: "24"
   - label: "Моих коммитов"
     value: "250+"
-gallery: []
+gallery:
+  - src: /images/projects/load-up/dashboard.jpg
+    alt: "Операционный дашборд: KPI и живая карта 600+ водителей"
+    caption: "Операционный дашборд: KPI и живая карта 600+ водителей"
+  - src: /images/projects/load-up/update-board.jpg
+    alt: "Update Board: статусы автопарка, прицепы и локации в одной виртуализированной таблице"
+    caption: "Update Board: статусы автопарка, прицепы и локации в одной виртуализированной таблице"
+  - src: /images/projects/load-up/trips.jpg
+    alt: "Рейсы: погрузка, доставка и статус диспетчеризации"
+    caption: "Рейсы: погрузка, доставка и статус диспетчеризации"
+  - src: /images/projects/load-up/route-planner.jpg
+    alt: "Планировщик маршрутов для траков на HERE Maps с весовыми станциями"
+    caption: "Планировщик маршрутов для траков на HERE Maps с весовыми станциями"
 ---
 
 ## Продукт

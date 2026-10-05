@@ -16,7 +16,19 @@ metrics:
     value: "24"
   - label: "My commits"
     value: "250+"
-gallery: []
+gallery:
+  - src: /images/projects/load-up/dashboard.jpg
+    alt: "Operations dashboard: KPIs and a live map of 600+ drivers"
+    caption: "Operations dashboard: KPIs and a live map of 600+ drivers"
+  - src: /images/projects/load-up/update-board.jpg
+    alt: "Update Board: fleet status, trailers and locations in one virtualized table"
+    caption: "Update Board: fleet status, trailers and locations in one virtualized table"
+  - src: /images/projects/load-up/trips.jpg
+    alt: "Trips: pickups, deliveries and dispatch status"
+    caption: "Trips: pickups, deliveries and dispatch status"
+  - src: /images/projects/load-up/route-planner.jpg
+    alt: "Truck route planner on HERE Maps with weigh stations"
+    caption: "Truck route planner on HERE Maps with weigh stations"
 ---
 
 ## The product
