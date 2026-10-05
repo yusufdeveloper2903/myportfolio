@@ -5,7 +5,7 @@ year: 2026
 role: Design & full-stack development
 stack: [Nuxt 4, TypeScript, Nuxt Content, Tailwind CSS v4, i18n]
 cover: /images/projects/portfolio.png
-order: 7
+order: 8
 links:
   source: https://github.com/yusufdeveloper2903/myportfolio
 ---

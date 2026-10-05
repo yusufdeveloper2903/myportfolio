@@ -5,7 +5,7 @@ year: 2026
 role: "Dizayn va dasturlash"
 stack: [React, Vite, Supabase, GitHub API]
 cover: /images/projects/tasker.jpg
-order: 6
+order: 7
 links:
   live: "https://todo-tasker-one.vercel.app"
 ---

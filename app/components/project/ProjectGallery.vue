@@ -3,6 +3,7 @@ interface Shot {
   src: string
   alt: string
   caption?: string
+  portrait?: boolean
 }
 
 const props = defineProps<{ items: Shot[] }>()
@@ -47,7 +48,8 @@ function onKeydown(event: KeyboardEvent) {
               :src="item.src"
               :alt="item.alt"
               loading="lazy"
-              class="aspect-[16/10] w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+              class="w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+              :class="item.portrait ? 'aspect-[3/4]' : 'aspect-[16/10]'"
             />
           </button>
           <figcaption v-if="item.caption" class="mt-2 text-sm text-muted">

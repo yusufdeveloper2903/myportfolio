@@ -17,7 +17,15 @@ const projectSchema = z.object({
   /** Organisation the work was done for, shown next to the role. */
   company: z.string().optional(),
   gallery: z
-    .array(z.object({ src: z.string(), alt: z.string(), caption: z.string().optional() }))
+    .array(
+      z.object({
+        src: z.string(),
+        alt: z.string(),
+        caption: z.string().optional(),
+        /** Tall shots (phones, photos) render at 3:4 instead of 16:10. */
+        portrait: z.boolean().optional(),
+      }),
+    )
     .default([]),
   links: z
     .object({

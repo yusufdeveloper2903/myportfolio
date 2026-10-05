@@ -5,7 +5,7 @@ year: 2022
 role: Frontend development
 stack: [Vue.js, JavaScript, Sass]
 cover: /images/projects/online-shop.jpg
-order: 11
+order: 12
 links:
   live: https://shops-online.netlify.app/
 ---

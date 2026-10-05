@@ -5,7 +5,7 @@ year: 2024
 role: "Frontend development"
 stack: [Vue 3, TypeScript, Pinia, CASL, PrimeVue, Tailwind CSS, ECharts, Leaflet, Vitest]
 cover: /images/projects/customer-platform.jpg
-order: 5
+order: 6
 links:
   source: "https://github.com/yusufdeveloper2903/Customer-Management-Platform"
 ---

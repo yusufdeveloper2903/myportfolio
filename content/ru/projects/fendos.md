@@ -5,7 +5,7 @@ year: 2022
 role: Frontend-разработка
 stack: [Vue.js, JavaScript, Sass, REST API]
 cover: /images/projects/fendos.jpg
-order: 8
+order: 9
 links:
   live: https://netfmovies.netlify.app
 ---

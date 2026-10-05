@@ -1,9 +1,13 @@
-company: "Invan"
+company: "Invan (tiin IT bo‘limi)"
+url: https://invan.uz/
 role: "Frontend Developer (Vue.js)"
 location: "Toshkent, O‘zbekiston"
 start: '2022-09'
 end: '2022-12'
 order: 4
 highlights:
-  - "Restoran va umumiy ovqatlanish mahsulotlarida production xatolarini tuzatdim va yangi modullar qo‘shdim."
-stack: [Vue.js, JavaScript]
+  - "Toshkentdagi tiin do‘konlar tarmog‘ining IT bo‘limida Invan — savdoni avtomatlashtirish platformasi (POS, ombor, CRM) ustida ishladim."
+  - "Admin panel modullarini yaratdim: buyurtmalar, mahsulotlar, ombor qoldig‘i, mijozlar, analitik grafiklar, bildirishnomalar va Excel eksporti."
+  - "Moslashuvchan invan.uz landing sahifalarini ishlab chiqdim."
+  - "Production loyihalardagi xatolarni tuzatdim va biznes talabi bo‘yicha yangi modullar qo‘shdim."
+stack: [Vue.js, Vuex, Bootstrap-Vue, Chart.js, Sass]

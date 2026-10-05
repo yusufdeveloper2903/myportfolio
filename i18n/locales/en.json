@@ -56,7 +56,7 @@
     "next": "Next project",
     "private": "Private codebase",
     "privateTitle": "Source code is private",
-    "privateNote": "This is a commercial product. Under the company’s policy the source code can’t be published. Screenshots are taken from the staging environment, with customer and driver data blurred.",
+    "privateNote": "This is a commercial product. Under the company’s policy the source code can’t be published. Screenshots show public pages or staging environments, with personal and customer data blurred.",
     "gallery": "Screenshots",
     "close": "Close",
     "company": "Company"

@@ -1,9 +1,13 @@
-company: "Invan"
+company: "Invan (tiin IT department)"
+url: https://invan.uz/
 role: "Frontend Developer (Vue.js)"
 location: "Tashkent, Uzbekistan"
 start: '2022-09'
 end: '2022-12'
 order: 4
 highlights:
-  - "Fixed bugs in production projects and built new modules for restaurant and food-service products."
-stack: [Vue.js, JavaScript]
+  - "Worked in the IT department behind tiin, a Tashkent supermarket chain, on Invan — its retail automation platform (POS, warehouse, CRM)."
+  - "Built admin panel modules: orders, products, warehouse stock, clients, analytics charts, notifications and Excel export."
+  - "Developed the responsive invan.uz landing pages."
+  - "Fixed bugs in production projects and added new modules on request from the business."
+stack: [Vue.js, Vuex, Bootstrap-Vue, Chart.js, Sass]
