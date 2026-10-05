@@ -6,7 +6,8 @@ start: '2022-05'
 end: '2024-09'
 order: 3
 highlights:
+  - "2012-yildan beri faoliyat yuritayotgan (100+ loyiha) toshkentlik IT kompaniya: banklar, telekom va davlat tashkilotlari uchun dasturlar."
+  - "Hunarda ta’lim platformasining admin panelini qildim: admin, o‘qituvchi va talaba rollari, kurslar, 5 ta to‘lov tizimi, chat, statistika va Excel eksporti."
+  - "Ekologiya qo‘mitasi uchun Ecology Check’ni ishlab chiqdim: idoralar bo‘limlari, ifloslanish issiqlik xaritalari, O‘zbekistonning mavzuli xaritalari, hududiy monitoring ma’lumotlari va klassifikatorlar."
   - "Banklar va savdo korxonalari uchun CRM tizimlarini yaratdim va qo‘llab-quvvatladim."
-  - "Mijoz talablari asosida veb-saytlar va ilovalar uchun foydalanuvchi interfeyslarini ishlab chiqdim va integratsiya qildim."
-  - "Dizaynerlar va backend muhandislar bilan birga interfeyslarning qulayligi va tezligini optimallashtirdim."
-stack: [Vue.js, JavaScript, TypeScript, Tailwind CSS]
+stack: [Vue.js, JavaScript, TypeScript, Leaflet, Tailwind CSS]

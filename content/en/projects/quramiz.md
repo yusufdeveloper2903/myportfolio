@@ -6,7 +6,7 @@ role: "Frontend developer (UI), with a teammate"
 company: "SQB Bank"
 stack: [Vue 2, Vuex, Vue Router, Axios, Yandex Maps, Laravel]
 cover: /images/projects/quramiz/home-hero.jpg
-order: 6
+order: 8
 confidential: true
 links:
   live: "https://quramiz.uz/"

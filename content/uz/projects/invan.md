@@ -6,7 +6,7 @@ role: "Frontend dasturchi (Vue.js)"
 company: "Invan · tiin IT bo‘limi"
 stack: [Vue.js, Vuex, Vue Router, Axios, Bootstrap-Vue, Chart.js, Sass]
 cover: /images/projects/invan/landing-hero.jpg
-order: 5
+order: 7
 confidential: true
 links:
   live: "https://invan.uz/"

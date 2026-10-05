@@ -5,7 +5,7 @@ year: 2022
 role: Frontend dasturlash
 stack: [Vue.js, JavaScript, Sass, REST API]
 cover: /images/projects/fendos.jpg
-order: 10
+order: 12
 links:
   live: https://netfmovies.netlify.app
 ---

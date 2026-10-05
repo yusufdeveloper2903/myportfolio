@@ -6,7 +6,8 @@ start: '2022-05'
 end: '2024-09'
 order: 3
 highlights:
+  - "IT company in Tashkent since 2012 (100+ projects) building software for banks, telecom and government organisations."
+  - "Built the admin panel of Hunarda, an education platform with admin, teacher and student roles: courses, payments via 5 providers, chat, statistics and Excel export."
+  - "Developed Ecology Check for the national ecology committee: agency workspaces, pollution heatmaps, thematic maps of Uzbekistan, regional monitoring data and classifiers."
   - "Built and maintained CRM systems for banks and retail businesses."
-  - "Developed and integrated user interfaces for websites and applications based on client requirements."
-  - "Optimized interfaces for usability and performance, working closely with designers and backend engineers."
-stack: [Vue.js, JavaScript, TypeScript, Tailwind CSS]
+stack: [Vue.js, JavaScript, TypeScript, Leaflet, Tailwind CSS]
