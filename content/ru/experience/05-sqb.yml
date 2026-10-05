@@ -1,9 +1,12 @@
-company: "SQB Construction"
-role: "Стажёр-программист (Vue.js)"
+company: "SQB банк"
+url: https://quramiz.uz/
+role: "Стажёр frontend-разработчик (Vue.js)"
 location: "Ташкент, Узбекистан"
 start: '2021-01'
 end: '2021-09'
 order: 5
 highlights:
-  - "Изучил Vue.js на практике и разрабатывал компоненты для сайтов компании под руководством senior-разработчика."
-stack: [Vue.js, JavaScript, HTML, CSS]
+  - "Вместе с коллегой сделал UI Quramiz.uz — маркетплейса стройматериалов банка SQB — и вывел его в продакшн."
+  - "Реализовал каталог, фильтры категорий, страницы товаров, корзину и мобильную версию на Vue 2 и Vuex."
+  - "Освоил Vue.js в продакшне под руководством senior-разработчика."
+stack: [Vue 2, Vuex, Vue Router, Axios]

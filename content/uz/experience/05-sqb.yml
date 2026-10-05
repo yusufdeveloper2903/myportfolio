@@ -1,9 +1,12 @@
-company: "SQB Construction"
-role: "Stajyor dasturchi (Vue.js)"
+company: "SQB bank"
+url: https://quramiz.uz/
+role: "Stajyor frontend dasturchi (Vue.js)"
 location: "Toshkent, O‘zbekiston"
 start: '2021-01'
 end: '2021-09'
 order: 5
 highlights:
-  - "Senior dasturchi rahbarligida Vue.js’ni amalda o‘rgandim va kompaniya saytlari uchun komponentlar yaratdim."
-stack: [Vue.js, JavaScript, HTML, CSS]
+  - "Sherigim bilan SQB bankining qurilish materiallari marketpleysi — Quramiz.uz UI’ni yaratib, production’ga chiqardik."
+  - "Vue 2 va Vuex’da katalog, kategoriya filtrlari, mahsulot sahifalari, savatcha va mobil layoutni qildim."
+  - "Senior dasturchi rahbarligida production’da Vue.js’ni o‘rgandim."
+stack: [Vue 2, Vuex, Vue Router, Axios]

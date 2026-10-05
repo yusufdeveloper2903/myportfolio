@@ -5,7 +5,7 @@ year: 2022
 role: Frontend development
 stack: [HTML, Sass, JavaScript]
 cover: /images/projects/power-yoga.jpg
-order: 11
+order: 12
 links:
   live: https://yoga11.netlify.app
 ---

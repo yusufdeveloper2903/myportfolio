@@ -8,6 +8,12 @@ interface Shot {
 
 const props = defineProps<{ items: Shot[] }>()
 
+// Wide screenshots and tall shots (phones, photos) are laid out in separate grids so
+// a single tall image never leaves a hole next to a wide one. Indices stay global for the lightbox.
+const indexed = computed(() => props.items.map((item, index) => ({ item, index })))
+const wide = computed(() => indexed.value.filter(({ item }) => !item.portrait))
+const tall = computed(() => indexed.value.filter(({ item }) => item.portrait))
+
 const dialog = useTemplateRef<HTMLDialogElement>('dialog')
 const activeIndex = ref(0)
 const active = computed(() => props.items[activeIndex.value])
@@ -30,32 +36,19 @@ function onKeydown(event: KeyboardEvent) {
 
 <template>
   <section :aria-label="$t('work.gallery')">
-    <ul class="grid gap-4 sm:grid-cols-2">
+    <ul v-if="wide.length" class="grid gap-4 sm:grid-cols-2">
       <li
-        v-for="(item, index) in items"
+        v-for="({ item, index }, position) in wide"
         :key="item.src"
         v-reveal
-        :class="index === 0 && items.length % 2 === 1 ? 'sm:col-span-2' : ''"
+        :class="position === 0 && wide.length % 2 === 1 ? 'sm:col-span-2' : ''"
       >
-        <figure>
-          <button
-            type="button"
-            class="group block w-full overflow-hidden rounded-xl border border-line bg-surface"
-            :aria-label="item.alt"
-            @click="open(index)"
-          >
-            <img
-              :src="item.src"
-              :alt="item.alt"
-              loading="lazy"
-              class="w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
-              :class="item.portrait ? 'aspect-[3/4]' : 'aspect-[16/10]'"
-            />
-          </button>
-          <figcaption v-if="item.caption" class="mt-2 text-sm text-muted">
-            {{ item.caption }}
-          </figcaption>
-        </figure>
+        <GalleryShot :item="item" @open="open(index)" />
+      </li>
+    </ul>
+    <ul v-if="tall.length" class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
+      <li v-for="{ item, index } in tall" :key="item.src" v-reveal>
+        <GalleryShot :item="item" @open="open(index)" />
       </li>
     </ul>
 

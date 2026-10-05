@@ -1,9 +1,12 @@
-company: "SQB Construction"
-role: "Intern Developer (Vue.js)"
+company: "SQB Bank"
+url: https://quramiz.uz/
+role: "Intern Frontend Developer (Vue.js)"
 location: "Tashkent, Uzbekistan"
 start: '2021-01'
 end: '2021-09'
 order: 5
 highlights:
-  - "Learned Vue.js in production and built components for company websites under the guidance of a senior developer."
-stack: [Vue.js, JavaScript, HTML, CSS]
+  - "Built the UI of Quramiz.uz — SQB bank’s construction materials marketplace — together with a teammate and took it to production."
+  - "Implemented the catalog, category filters, product pages, cart and a mobile layout in Vue 2 and Vuex."
+  - "Learned production Vue.js under the guidance of a senior developer."
+stack: [Vue 2, Vuex, Vue Router, Axios]
