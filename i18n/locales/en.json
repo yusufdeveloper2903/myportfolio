@@ -68,7 +68,7 @@
   "contact": {
     "eyebrow": "Contact",
     "title": "Have a project in mind? Let’s talk.",
-    "subtitle": "I usually reply within a day. The fastest way to reach me is email or Telegram.",
+    "subtitle": "I usually reply within a day. The fastest way to reach me is email, phone or Telegram.",
     "copy": "Copy email",
     "copied": "Copied!",
     "sendEmail": "Send email",
@@ -82,7 +82,8 @@
       "gmail": "Send via Gmail",
       "app": "Other mail app",
       "subject": "Project inquiry from {name}"
-    }
+    },
+    "call": "Call me"
   },
   "palette": {
     "open": "Open command menu",

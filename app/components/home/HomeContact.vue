@@ -20,17 +20,30 @@ const { open: openContact } = useContactDialog()
       <p class="relative mx-auto mt-5 max-w-xl text-pretty text-muted">
         {{ $t('contact.subtitle') }}
       </p>
-      <a
-        :href="`mailto:${site.email}`"
-        class="relative mt-8 inline-block text-lg font-medium break-all underline decoration-line underline-offset-8 transition-colors hover:decoration-accent sm:text-2xl"
-      >
-        {{ site.email }}
-      </a>
+      <div class="relative mt-8 flex flex-col items-center gap-3">
+        <a
+          :href="`mailto:${site.email}`"
+          class="text-lg font-medium break-all underline decoration-line underline-offset-8 transition-colors hover:decoration-accent sm:text-2xl"
+        >
+          {{ site.email }}
+        </a>
+        <a
+          :href="site.phoneHref"
+          class="inline-flex items-center gap-2 font-mono text-lg tabular-nums text-muted transition-colors hover:text-fg sm:text-xl"
+        >
+          <Icon name="lucide:phone" class="size-4" />
+          {{ site.phone }}
+        </a>
+      </div>
       <div class="relative mt-8 flex flex-wrap items-center justify-center gap-3">
         <button type="button" class="btn-primary" @click="openContact">
           <Icon name="lucide:mail" class="size-4" />
           {{ $t('contact.sendEmail') }}
         </button>
+        <a :href="site.phoneHref" class="btn-ghost">
+          <Icon name="lucide:phone" class="size-4" />
+          {{ $t('contact.call') }}
+        </a>
         <CopyEmailButton />
         <a :href="site.cvUrl" class="btn-ghost" download>
           <Icon name="lucide:file-down" class="size-4" />

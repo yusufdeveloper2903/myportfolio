@@ -2,7 +2,7 @@
 title: "Dyzlix — Smart Fuel System"
 description: "AQSh yuk tashish parklari uchun yoqilg‘i boshqaruvi platformasi: tavsiya etilgan yoqilg‘i shoxobchalari, bronlar, karta tranzaksiyalari, parkni jonli kuzatish va tejash analitikasi."
 year: 2024
-role: "Asosiy frontend muhandis"
+role: "Frontend lead · noldan qurganman"
 company: "Longhorn Logistics Group"
 stack: [Vue 3.5, TypeScript, Vite, Pinia, TanStack Query, TanStack Table, TanStack Virtual, HERE Maps, D3, STOMP/WebSocket, Tailwind CSS 4, Vitest, Playwright]
 cover: /images/projects/dyzlix/cover.jpg
@@ -34,7 +34,15 @@ Yoqilg‘i — yuk tashish kompaniyasining eng katta xarajatlaridan biri. Dyzlix
 
 ## Mening rolim
 
-Loyihaga 2024-yil oktyabrida boshidanoq qo‘shildim va uning tarixining yarmidan ko‘pini yozdim: arxitektura, ko‘pchilik feature modullar, tracking board va sifat vositalari.
+**Dyzlix frontendini noldan o‘zim qurganman va uni to‘liq boshqaraman.** Kod bazasini 2024-yil oktyabrida boshladim va uning atrofidagi hamma narsani o‘zim sozladim:
+
+- **Arxitektura** — `app → pages → modules → shared` qatlamli tuzilmasi, ma’lumot oqimi qoidalari va har bir feature amal qiladigan modul shabloni.
+- **Infratuzilma** — Vite build, TypeScript konfiguratsiyasi, staging va production uchun nginx orqali xizmat ko‘rsatuvchi multi-stage Docker image’lar, environment boshqaruvi va reliz versiyalash.
+- **Dasturchi tajribasi va sifat** — ESLint va Prettier, Conventional Commits, type-check, design-token, import chegaralari va bundle byudjeti darvozalariga ega git hook’lar, unit testlar va Playwright smoke harness.
+- **Dizayn tizimi** — umumiy UI kit, design tokenlar va qorong‘i mavzu.
+- **Funksiyalar** — mahsulotning katta qismi: dashboard, Fuel Book, jonli tracking board, kartalar, tranzaksiyalar, idling, huquqlar va sozlamalar.
+
+Bugun men kod bazasining asosiy muallifiman (1 100+ commit) va yangi funksiyalar qanday qurilishi bo‘yicha asosiy mas’ulman.
 
 ## Arxitektura
 

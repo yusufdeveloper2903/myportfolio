@@ -2,7 +2,7 @@
 title: "Dyzlix — Smart Fuel System"
 description: "A fuel management platform for US trucking fleets: suggested fuel stops, bookings, card transactions, live fleet tracking and savings analytics."
 year: 2024
-role: "Core frontend engineer"
+role: "Frontend lead · built from scratch"
 company: "Longhorn Logistics Group"
 stack: [Vue 3.5, TypeScript, Vite, Pinia, TanStack Query, TanStack Table, TanStack Virtual, HERE Maps, D3, STOMP/WebSocket, Tailwind CSS 4, Vitest, Playwright]
 cover: /images/projects/dyzlix/cover.jpg
@@ -34,7 +34,15 @@ Fuel is one of the biggest costs for a trucking company. Dyzlix suggests the bes
 
 ## My role
 
-I joined at the start of the project in October 2024 and wrote more than half of its history: architecture, most feature modules, the tracking board and the quality tooling.
+**I built the Dyzlix frontend from scratch and own it end to end.** I started the codebase in October 2024 and set up everything around it myself:
+
+- **Architecture** — the layered `app → pages → modules → shared` structure, the data-flow conventions and the module template every feature follows.
+- **Infrastructure** — Vite build, TypeScript configuration, multi-stage Docker images for staging and production served by nginx, environment handling and release versioning.
+- **Developer experience & quality** — ESLint and Prettier, Conventional Commits, git hooks with type-check, design-token, import-boundary and bundle-budget gates, unit tests and the Playwright smoke harness.
+- **Design system** — the shared UI kit, design tokens and dark mode.
+- **Features** — most of the product: dashboard, Fuel Book, live tracking board, cards, transactions, idling, permissions and settings.
+
+Today I am the main author of the codebase (1,100+ commits) and the reference for how new features are built.
 
 ## Architecture
 

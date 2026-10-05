@@ -2,7 +2,7 @@
 title: "Bot Manager — Telegram & fleet operations"
 description: "The internal operations panel of a US fleet company: a Telegram-style chat client for driver groups, scheduled posts, risk zones, inspections and role-based access."
 year: 2024
-role: "Lead frontend engineer"
+role: "Frontend lead · built from scratch"
 company: "Longhorn Logistics Group"
 stack: [Vue 3, TypeScript, Vite, Pinia, TanStack Query, STOMP/WebSocket, Leaflet, HERE Maps, vue-i18n, Tailwind CSS, Vitest]
 cover: /images/projects/bot-manager/cover.jpg
@@ -37,7 +37,15 @@ Dispatch, safety and maintenance teams talk to hundreds of truck drivers through
 
 ## My role
 
-I have been the main frontend author since the first commit in December 2024 — around 80% of the codebase history — owning architecture, the shared UI kit and most of the 41 feature modules.
+**Bot Manager is my project from the very first commit.** I created the repository in December 2024 and built the whole frontend and its infrastructure myself:
+
+- **Architecture** — the `app / pages / modules / shared` layering, isolated feature modules, the typed API layer and the lazy-loaded route registry with feature flags.
+- **Infrastructure** — Vite and TypeScript setup, Docker images for staging and production, automatic deploys from `dev` and `main`, and release detection that prompts users to refresh after a deploy.
+- **Realtime & resilience** — the app-wide STOMP client, reconnect strategy and graceful handling of server restarts and expired sessions.
+- **Developer experience** — ESLint, Prettier, husky, lint-staged, commitlint with module-based scopes and a pre-push hook running type-check, tests and a staging build.
+- **Product** — the shared UI kit and most of the 41 feature modules, including Telegram Mirror, posts, risk zones, PTI and RBAC.
+
+I wrote ~80% of the codebase history (1,700+ commits) and remain its lead.
 
 ## Architecture
 

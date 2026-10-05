@@ -2,7 +2,7 @@
 title: "Bot Manager — Telegram va park operatsiyalari"
 description: "AQShdagi yuk tashish kompaniyasining ichki operatsion paneli: haydovchilar guruhlari uchun Telegram’ga o‘xshash chat klienti, rejalashtirilgan postlar, xavfli zonalar, ko‘riklar va rolga asoslangan kirish."
 year: 2024
-role: "Yetakchi frontend muhandis"
+role: "Frontend lead · noldan qurganman"
 company: "Longhorn Logistics Group"
 stack: [Vue 3, TypeScript, Vite, Pinia, TanStack Query, STOMP/WebSocket, Leaflet, HERE Maps, vue-i18n, Tailwind CSS, Vitest]
 cover: /images/projects/bot-manager/cover.jpg
@@ -37,7 +37,15 @@ Dispetcherlik, xavfsizlik va texnik xizmat jamoalari yuzlab haydovchilar bilan T
 
 ## Mening rolim
 
-2024-yil dekabridagi birinchi commit’dan beri asosiy frontend muallifiman — kod bazasi tarixining ~80% i: arxitektura, umumiy UI kit va 41 ta feature modulning ko‘pchiligi.
+**Bot Manager — birinchi commit’dan boshlab mening loyiham.** Repozitoriyani 2024-yil dekabrida yaratdim va butun frontend hamda uning infratuzilmasini o‘zim qurdim:
+
+- **Arxitektura** — `app / pages / modules / shared` qatlamlari, izolyatsiyalangan feature modullar, tiplangan API qatlami va feature flag’li lazy-load route registri.
+- **Infratuzilma** — Vite va TypeScript sozlamalari, staging va production uchun Docker image’lar, `dev` va `main` branchlardan avtomatik deploy hamda deploy’dan keyin foydalanuvchiga sahifani yangilashni taklif qiluvchi reliz aniqlash.
+- **Real vaqt va barqarorlik** — ilova bo‘ylab yagona STOMP klient, qayta ulanish strategiyasi, server qayta ishga tushishi va sessiya tugashini to‘g‘ri boshqarish.
+- **Dasturchi tajribasi** — ESLint, Prettier, husky, lint-staged, modul scope’li commitlint va type-check, testlar hamda staging build’ni ishga tushiradigan pre-push hook.
+- **Mahsulot** — umumiy UI kit va 41 ta feature modulning ko‘pchiligi: Telegram Mirror, postlar, xavfli zonalar, PTI va RBAC.
+
+Kod bazasi tarixining ~80% ini (1 700+ commit) men yozganman va hozir ham loyihaga rahbarlik qilaman.
 
 ## Arxitektura
 

@@ -70,11 +70,9 @@ export default defineNuxtConfig({
       { code: 'uz', language: 'uz-UZ', name: 'O‘zbekcha', file: 'uz.json' },
       { code: 'ru', language: 'ru-RU', name: 'Русский', file: 'ru.json' },
     ],
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_locale',
-      redirectOn: 'root',
-    },
+    // The site is pre-rendered, so the locale comes from the URL only. Client-side
+    // redirects would hydrate English HTML with another locale and mismatch.
+    detectBrowserLanguage: false,
   },
 
   colorMode: {

@@ -68,7 +68,7 @@
   "contact": {
     "eyebrow": "Aloqa",
     "title": "Loyiha g‘oyangiz bormi? Keling, gaplashamiz.",
-    "subtitle": "Odatda bir kun ichida javob beraman. Eng tez yo‘li — email yoki Telegram.",
+    "subtitle": "Odatda bir kun ichida javob beraman. Eng tez yo‘li — email, telefon yoki Telegram.",
     "copy": "Emailni nusxalash",
     "copied": "Nusxalandi!",
     "sendEmail": "Email yuborish",
@@ -82,7 +82,8 @@
       "gmail": "Gmail orqali yuborish",
       "app": "Boshqa pochta ilovasi",
       "subject": "{name}dan loyiha bo‘yicha murojaat"
-    }
+    },
+    "call": "Qo‘ng‘iroq qilish"
   },
   "palette": {
     "open": "Buyruqlar menyusini ochish",

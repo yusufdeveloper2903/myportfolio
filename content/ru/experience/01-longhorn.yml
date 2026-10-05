@@ -4,8 +4,8 @@ location: "Ташкент, Узбекистан"
 start: '2024-10'
 order: 1
 highlights:
-  - "Основной автор фронтенда Bot Manager (~80% коммитов): Telegram-подобная операционная панель для американской транспортной компании с RBAC, устойчивым real-time (STOMP/WebSocket) и картой опасных зон."
-  - "Ключевой инженер Dyzlix — платформы управления топливом: живой трекинг на HERE Maps, виртуализированные списки, ратчет-гейты качества и 17 ADR."
+  - "Создал Bot Manager с нуля и веду его (~80% коммитов): архитектура, инфраструктура (Docker, CI/CD-деплой), real-time слой на STOMP, RBAC и Telegram-подобная операционная панель для американской транспортной компании."
+  - "Создал с нуля платформу управления топливом Dyzlix: архитектура, инфраструктура Docker/nginx, гейты качества, дизайн-система и живой трекинг на HERE Maps."
   - "С 2026 года выпускаю фичи в Load Up — крупной TMS на React 19 с живой доской грузов, звонками WebRTC и модулями автопарка и безопасности."
   - "Стандартизировал тулинг между продуктами: Vite, TypeScript, TanStack Query, Vitest и Playwright, Conventional Commits и pre-push гейты качества."
 stack: [Vue 3, React 19, TypeScript, TanStack Query, Pinia, Zustand, STOMP/WebSocket, WebRTC, HERE Maps, Vitest, Playwright]

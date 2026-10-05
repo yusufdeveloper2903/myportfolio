@@ -17,6 +17,8 @@ export interface StackGroup {
 export const site = {
   name: 'Yusuf Yuldashev',
   email: 'yusufdeveloper2903@gmail.com',
+  phone: '+998 99 814 29 03',
+  phoneHref: 'tel:+998998142903',
   timeZone: 'Asia/Tashkent',
   yearsOfExperience: 5,
   availableForWork: true,

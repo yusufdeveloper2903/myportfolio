@@ -23,6 +23,7 @@ useHead({
         name: site.name,
         jobTitle: 'Senior Full-Stack Engineer',
         email: `mailto:${site.email}`,
+        telephone: site.phoneHref.replace('tel:', ''),
         url: siteUrl,
         image: new URL(site.avatar, siteUrl).href,
         address: { '@type': 'PostalAddress', addressLocality: 'Tashkent', addressCountry: 'UZ' },

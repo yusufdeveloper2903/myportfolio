@@ -4,8 +4,8 @@ location: "Tashkent, Uzbekistan"
 start: '2024-10'
 order: 1
 highlights:
-  - "Main frontend author of Bot Manager (~80% of commits): a Telegram-style operations panel for a US fleet company with RBAC, resilient realtime (STOMP/WebSocket) and risk-zone maps."
-  - "Core engineer on Dyzlix, a fuel management platform: live HERE Maps tracking, virtualized lists, ratcheted quality gates and 17 architecture decision records."
+  - "Built Bot Manager from scratch and lead it (~80% of commits): architecture, infrastructure (Docker, CI/CD deploys), realtime STOMP layer, RBAC and a Telegram-style operations panel for a US fleet company."
+  - "Built the Dyzlix fuel management platform from scratch: architecture, Docker/nginx infrastructure, quality gates, design system and live HERE Maps tracking."
   - "Since 2026 shipping features in Load Up, a large React 19 TMS with a live load board, WebRTC calling and fleet and safety modules."
   - "Standardised the toolchain across products: Vite, TypeScript, TanStack Query, Vitest and Playwright, Conventional Commits and pre-push quality gates."
 stack: [Vue 3, React 19, TypeScript, TanStack Query, Pinia, Zustand, STOMP/WebSocket, WebRTC, HERE Maps, Vitest, Playwright]
