@@ -32,11 +32,6 @@ export const site = {
       icon: 'simple-icons:linkedin',
     },
     { name: 'Telegram', url: 'https://t.me/yusufnfg', icon: 'simple-icons:telegram' },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/yusuf__0_2/',
-      icon: 'simple-icons:instagram',
-    },
   ] satisfies SocialLink[],
   companies: [
     'Longhorn Logistics Group',
