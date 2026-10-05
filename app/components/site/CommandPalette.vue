@@ -58,13 +58,6 @@ const commands = computed<Command[]>(() => [
     run: () => go('/#experience'),
   },
   {
-    id: 'blog',
-    group: 'navigation',
-    label: t('nav.blog'),
-    icon: 'lucide:pen-line',
-    run: () => go('/blog'),
-  },
-  {
     id: 'contact',
     group: 'navigation',
     label: t('nav.contact'),

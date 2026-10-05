@@ -36,6 +36,13 @@ export const site = {
       icon: 'simple-icons:instagram',
     },
   ] satisfies SocialLink[],
+  companies: [
+    'Longhorn Logistics Group',
+    'Expensify (open source)',
+    'ZK — Zamonaviy Kommunikatsiyalar',
+    'Invan · tiin',
+    'SQB Bank',
+  ],
   stack: [
     {
       key: 'frontend',

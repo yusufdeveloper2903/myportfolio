@@ -36,14 +36,6 @@ const projectSchema = z.object({
   metrics: z.array(z.object({ label: z.string(), value: z.string() })).default([]),
 })
 
-const postSchema = z.object({
-  title: z.string(),
-  description: z.string(),
-  date: z.string(),
-  tags: z.array(z.string()).default([]),
-  cover: z.string().optional(),
-})
-
 const experienceSchema = z.object({
   company: z.string(),
   role: z.string(),
@@ -72,11 +64,6 @@ export default defineContentConfig({
       type: 'page',
       source: { include: `${locale}/projects/*.md`, prefix: '/work' },
       schema: projectSchema,
-    })),
-    ...localized('blog', (locale) => ({
-      type: 'page',
-      source: { include: `${locale}/blog/*.md`, prefix: '/blog' },
-      schema: postSchema,
     })),
     ...localized('experience', (locale) => ({
       type: 'data',

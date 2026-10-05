@@ -3,7 +3,6 @@
     "home": "Home",
     "work": "Work",
     "experience": "Experience",
-    "blog": "Blog",
     "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -32,7 +31,7 @@
     "location": "Tashkent, Uzbekistan",
     "localTime": "Local time",
     "stack": "Core stack",
-    "latestPost": "Latest writing"
+    "companies": "Companies I’ve worked with"
   },
   "stack": {
     "groups": {
@@ -65,14 +64,6 @@
     "eyebrow": "Experience",
     "title": "Where I’ve made an impact",
     "present": "Present"
-  },
-  "blog": {
-    "eyebrow": "Writing",
-    "title": "Notes on engineering",
-    "subtitle": "Lessons from building products, teaching and shipping to production.",
-    "viewAll": "All posts",
-    "back": "All posts",
-    "empty": "No posts yet."
   },
   "contact": {
     "eyebrow": "Contact",
@@ -113,9 +104,7 @@
     "title": "Yusuf Yuldashev — Senior Full-Stack Engineer",
     "description": "Senior full-stack engineer building fast, scalable web products with TypeScript, Vue/Nuxt and Node.js.",
     "workTitle": "Work",
-    "workDescription": "Selected projects and case studies by Yusuf Yuldashev.",
-    "blogTitle": "Blog",
-    "blogDescription": "Articles about web engineering, architecture and lessons learned."
+    "workDescription": "Selected projects and case studies by Yusuf Yuldashev."
   },
   "error": {
     "notFound": "Page not found",

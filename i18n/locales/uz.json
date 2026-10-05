@@ -3,7 +3,6 @@
     "home": "Bosh sahifa",
     "work": "Loyihalar",
     "experience": "Tajriba",
-    "blog": "Blog",
     "contact": "Aloqa",
     "openMenu": "Menyuni ochish",
     "closeMenu": "Menyuni yopish",
@@ -32,7 +31,7 @@
     "location": "Toshkent, O‘zbekiston",
     "localTime": "Mahalliy vaqt",
     "stack": "Asosiy stack",
-    "latestPost": "So‘nggi maqola"
+    "companies": "Ishlagan kompaniyalarim"
   },
   "stack": {
     "groups": {
@@ -65,14 +64,6 @@
     "eyebrow": "Tajriba",
     "title": "Qayerda natija ko‘rsatganman",
     "present": "Hozirgacha"
-  },
-  "blog": {
-    "eyebrow": "Maqolalar",
-    "title": "Muhandislik haqida qaydlar",
-    "subtitle": "Mahsulot qurish, o‘qitish va production’ga chiqarishdan olingan saboqlar.",
-    "viewAll": "Barcha maqolalar",
-    "back": "Barcha maqolalar",
-    "empty": "Hozircha maqolalar yo‘q."
   },
   "contact": {
     "eyebrow": "Aloqa",
@@ -113,9 +104,7 @@
     "title": "Yusuf Yuldashev — Senior Full-Stack Engineer",
     "description": "TypeScript, Vue/Nuxt va Node.js bilan tez va kengayuvchan veb-mahsulotlar yaratuvchi senior full-stack muhandis.",
     "workTitle": "Loyihalar",
-    "workDescription": "Yusuf Yuldashevning tanlangan loyihalari va case study’lari.",
-    "blogTitle": "Blog",
-    "blogDescription": "Veb-muhandislik, arxitektura va olingan saboqlar haqida maqolalar."
+    "workDescription": "Yusuf Yuldashevning tanlangan loyihalari va case study’lari."
   },
   "error": {
     "notFound": "Sahifa topilmadi",

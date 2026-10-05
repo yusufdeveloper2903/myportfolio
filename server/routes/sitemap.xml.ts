@@ -2,7 +2,7 @@ import { queryCollection } from '@nuxt/content/nitro'
 
 const LOCALES = ['en', 'uz', 'ru'] as const
 const DEFAULT_LOCALE = 'en'
-const STATIC_PATHS = ['/', '/work', '/blog']
+const STATIC_PATHS = ['/', '/work']
 
 function localize(path: string, locale: string): string {
   if (locale === DEFAULT_LOCALE) return path
@@ -14,17 +14,10 @@ export default defineEventHandler(async (event) => {
 
   const paths = await Promise.all(
     LOCALES.map(async (locale) => {
-      const [projects, posts] = await Promise.all([
-        queryCollection(event, `projects_${locale}` as 'projects_en')
-          .select('path')
-          .all(),
-        queryCollection(event, `blog_${locale}` as 'blog_en')
-          .select('path')
-          .all(),
-      ])
-      return [...STATIC_PATHS, ...projects.map((p) => p.path), ...posts.map((p) => p.path)].map(
-        (path) => localize(path, locale),
-      )
+      const projects = await queryCollection(event, `projects_${locale}` as 'projects_en')
+        .select('path')
+        .all()
+      return [...STATIC_PATHS, ...projects.map((p) => p.path)].map((path) => localize(path, locale))
     }),
   )
 

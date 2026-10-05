@@ -2,7 +2,7 @@
  * Content is stored per locale (`projects_en`, `projects_uz`, …). These composables
  * query the active locale and fall back to English for entries not translated yet.
  */
-type ContentBase = 'projects' | 'blog' | 'experience'
+type ContentBase = 'projects' | 'experience'
 
 const FALLBACK_LOCALE = 'en'
 
@@ -54,40 +54,6 @@ export function useProject(slug: MaybeRefOrGetter<string>) {
             .path(`/work/${toValue(slug)}`)
             .first(),
         (project) => !project,
-      ),
-  )
-}
-
-export function usePosts(options: { limit?: number } = {}) {
-  const { locale } = useI18n()
-  return useAsyncData(
-    () => `posts:${locale.value}:${options.limit ?? ''}`,
-    () =>
-      withFallback(
-        locale.value,
-        (lang) => {
-          let query = queryCollection(collection('blog', lang)).order('date', 'DESC')
-          if (options.limit) query = query.limit(options.limit)
-          return query.all()
-        },
-        isEmptyList,
-      ),
-    { default: () => [] },
-  )
-}
-
-export function usePost(slug: MaybeRefOrGetter<string>) {
-  const { locale } = useI18n()
-  return useAsyncData(
-    () => `post:${locale.value}:${toValue(slug)}`,
-    () =>
-      withFallback(
-        locale.value,
-        (lang) =>
-          queryCollection(collection('blog', lang))
-            .path(`/blog/${toValue(slug)}`)
-            .first(),
-        (post) => !post,
       ),
   )
 }

@@ -1,14 +1,9 @@
 <script setup lang="ts">
-import type { BlogEnCollectionItem, ProjectsEnCollectionItem } from '@nuxt/content'
+import type { ProjectsEnCollectionItem } from '@nuxt/content'
 
 import { site } from '~/data/site'
 
-const props = defineProps<{
-  projects: ProjectsEnCollectionItem[]
-  latestPost?: BlogEnCollectionItem
-}>()
-
-const { locale } = useI18n()
+const props = defineProps<{ projects: ProjectsEnCollectionItem[] }>()
 const primary = computed(() => props.projects[0])
 const secondary = computed(() => props.projects[1])
 </script>
@@ -88,27 +83,19 @@ const secondary = computed(() => props.projects[1])
         </dl>
       </div>
 
-      <!-- Latest post -->
-      <NuxtLinkLocale
-        v-if="latestPost"
-        v-reveal
-        :to="latestPost.path"
-        class="group card flex flex-col justify-between p-6 transition-colors hover:bg-surface-hover sm:col-span-2"
-      >
-        <div class="flex items-center justify-between">
-          <p class="eyebrow">{{ $t('bento.latestPost') }}</p>
-          <Icon
-            name="lucide:arrow-up-right"
-            class="size-4 text-subtle transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-          />
-        </div>
-        <div class="mt-6">
-          <h3 class="text-lg font-medium text-balance">{{ latestPost.title }}</h3>
-          <time :datetime="latestPost.date" class="mt-2 block text-sm text-muted">
-            {{ formatDate(latestPost.date, locale) }}
-          </time>
-        </div>
-      </NuxtLinkLocale>
+      <!-- Companies -->
+      <div v-reveal class="card flex flex-col justify-between p-6 sm:col-span-2">
+        <p class="eyebrow">{{ $t('bento.companies') }}</p>
+        <ul class="mt-5 flex flex-wrap gap-2">
+          <li
+            v-for="company in site.companies"
+            :key="company"
+            class="rounded-full border border-line bg-bg px-3 py-1.5 text-sm"
+          >
+            {{ company }}
+          </li>
+        </ul>
+      </div>
 
       <!-- Second project -->
       <NuxtLinkLocale

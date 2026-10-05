@@ -9,7 +9,6 @@ const isScrolled = computed(() => y.value > 8)
 const links = [
   { key: 'nav.work', to: '/work' },
   { key: 'nav.experience', to: '/#experience' },
-  { key: 'nav.blog', to: '/blog' },
   { key: 'nav.contact', to: '/#contact' },
 ] as const
 

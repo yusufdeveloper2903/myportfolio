@@ -1,7 +1,7 @@
 # myportfolio
 
 Personal site of Yusuf Yuldashev — a multilingual, statically generated portfolio with
-case studies, a blog and a `⌘K` command palette.
+case studies and a `⌘K` command palette.
 
 **Stack:** Nuxt 4 · TypeScript · Nuxt Content v3 · Tailwind CSS v4 · @nuxtjs/i18n (EN / UZ / RU)
 
@@ -30,7 +30,6 @@ Everything you are likely to change is data, not code:
 | What                         | Where                               |
 | ---------------------------- | ----------------------------------- |
 | Projects / case studies      | `content/<locale>/projects/*.md`    |
-| Blog posts                   | `content/<locale>/blog/*.md`        |
 | Experience timeline          | `content/<locale>/experience/*.yml` |
 | Name, email, socials, stack  | `app/data/site.ts`                  |
 | UI copy (hero, buttons, SEO) | `i18n/locales/{en,uz,ru}.json`      |
@@ -47,7 +46,7 @@ app/
 ├── layouts/default.vue    # Header, footer, ⌘K palette
 ├── components/
 │   ├── home/              # Home page sections (hero, bento, work, experience, contact)
-│   ├── project/  blog/    # Feature components
+│   ├── project/           # Case study components
 │   ├── site/              # App shell: header, footer, theme, locale, command palette
 │   └── ui/                # Small reusable building blocks
 ├── composables/           # useLocalizedContent, usePageSeo, useCommandPalette, …
