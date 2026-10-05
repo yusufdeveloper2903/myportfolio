@@ -31,7 +31,10 @@ const secondary = computed(() => props.projects[1])
           />
         </div>
         <div class="flex flex-1 flex-col justify-end p-6">
-          <p class="eyebrow">{{ $t('bento.featured') }}</p>
+          <div class="flex items-center justify-between gap-3">
+            <p class="eyebrow">{{ $t('bento.featured') }}</p>
+            <PrivateBadge v-if="primary.confidential" />
+          </div>
           <h3 class="mt-2 text-2xl font-semibold tracking-tight">{{ primary.title }}</h3>
           <p class="mt-2 line-clamp-2 text-sm text-muted">{{ primary.description }}</p>
           <span class="mt-4 inline-flex items-center gap-1.5 text-sm font-medium">
@@ -121,7 +124,10 @@ const secondary = computed(() => props.projects[1])
           class="aspect-[4/3] w-32 shrink-0 rounded-xl border border-line object-cover sm:w-40"
         />
         <div class="min-w-0">
-          <p class="eyebrow">{{ secondary.year }}</p>
+          <p class="flex items-center gap-2">
+            <span class="eyebrow">{{ secondary.year }}</span>
+            <PrivateBadge v-if="secondary.confidential" />
+          </p>
           <h3 class="mt-1 text-lg font-medium">{{ secondary.title }}</h3>
           <p class="mt-1 line-clamp-2 text-sm text-muted">{{ secondary.description }}</p>
         </div>

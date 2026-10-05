@@ -12,6 +12,13 @@ const projectSchema = z.object({
   cover: z.string(),
   featured: z.boolean().default(false),
   order: z.number().default(100),
+  /** Commercial work whose source can't be published (company policy / NDA). */
+  confidential: z.boolean().default(false),
+  /** Organisation the work was done for, shown next to the role. */
+  company: z.string().optional(),
+  gallery: z
+    .array(z.object({ src: z.string(), alt: z.string(), caption: z.string().optional() }))
+    .default([]),
   links: z
     .object({
       live: z.string().url().optional(),

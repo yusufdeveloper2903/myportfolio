@@ -5,7 +5,7 @@ year: 2022
 role: Frontend dasturlash
 stack: [Vue.js, JavaScript, Sass]
 cover: /images/projects/online-shop.jpg
-order: 9
+order: 11
 links:
   live: https://shops-online.netlify.app/
 ---

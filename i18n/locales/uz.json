@@ -53,7 +53,13 @@
     "year": "Yil",
     "stack": "Stack",
     "back": "Barcha loyihalar",
-    "next": "Keyingi loyiha"
+    "next": "Keyingi loyiha",
+    "private": "Yopiq kod",
+    "privateTitle": "Manba kodi yopiq",
+    "privateNote": "Bu tijoriy mahsulot. Kompaniya reglamentiga ko‘ra manba kodini ochiq e’lon qilish mumkin emas. Skrinshotlar staging muhitidan olingan, mijoz va haydovchilar ma’lumotlari xiralashtirilgan.",
+    "gallery": "Skrinshotlar",
+    "close": "Yopish",
+    "company": "Kompaniya"
   },
   "experience": {
     "eyebrow": "Tajriba",

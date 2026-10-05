@@ -5,7 +5,7 @@ year: 2026
 role: Dizayn va full-stack dasturlash
 stack: [Nuxt 4, TypeScript, Nuxt Content, Tailwind CSS v4, i18n]
 cover: /images/projects/portfolio.png
-order: 5
+order: 7
 links:
   source: https://github.com/yusufdeveloper2903/myportfolio
 ---

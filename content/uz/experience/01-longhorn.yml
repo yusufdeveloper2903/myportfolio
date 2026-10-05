@@ -4,8 +4,8 @@ location: "Toshkent, O‘zbekiston"
 start: '2024-10'
 order: 1
 highlights:
-  - "AQShdagi yuk mashinalari parki boshqaruv platformasining frontend qismiga rahbarlik qilaman: real vaqtda yuk mashinalarini kuzatish, WebRTC asosidagi dispetcherlik va katta hajmdagi ma’lumotlar vizualizatsiyasi."
-  - "Katta hajmda ham tez ishlaydigan interfeyslar: 10 000+ qatorli virtualizatsiya, vaqt qatorlari grafiklari uchun LTTB downsampling va 100 ms dan tez javob beruvchi WebSocket yangilanishlari."
-  - "Katta kod bazasini modulli saqlash uchun Feature-Sliced Design va zamonaviy vositalarni (Vite, TypeScript, Vitest, Playwright) joriy etdim."
-  - "Code-splitting, lazy loading va server holatini samarali boshqarish (TanStack Query, Pinia, Redux) orqali Core Web Vitals ko‘rsatkichlarini yaxshiladim."
-stack: [React 19, Next.js, Vue 3, Nuxt, TypeScript, TanStack Query, Zustand, Pinia, WebRTC, WebSocket]
+  - "Bot Manager’ning asosiy frontend muallifi (~80% commitlar): AQShdagi park kompaniyasi uchun RBAC, barqaror real vaqt (STOMP/WebSocket) va xavfli zonalar xaritasiga ega Telegram’simon operatsion panel."
+  - "Dyzlix yoqilg‘i boshqaruvi platformasining asosiy muhandisi: HERE Maps’da jonli kuzatuv, virtualizatsiyalangan ro‘yxatlar, sifat darvozalari va 17 ta arxitektura qarori (ADR)."
+  - "2026-yildan beri Load Up’da funksiyalar chiqaraman: jonli load board, WebRTC qo‘ng‘iroqlari, park va xavfsizlik modullariga ega yirik React 19 TMS."
+  - "Mahsulotlar bo‘ylab vositalarni standartlashtirdim: Vite, TypeScript, TanStack Query, Vitest va Playwright, Conventional Commits va pre-push sifat darvozalari."
+stack: [Vue 3, React 19, TypeScript, TanStack Query, Pinia, Zustand, STOMP/WebSocket, WebRTC, HERE Maps, Vitest, Playwright]

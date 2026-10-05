@@ -4,8 +4,8 @@ location: "Ташкент, Узбекистан"
 start: '2024-10'
 order: 1
 highlights:
-  - "Руковожу frontend-разработкой американской платформы управления автопарком: отслеживание грузовиков в реальном времени, диспетчеризация на WebRTC и визуализация больших объёмов данных."
-  - "Интерфейсы, которые остаются быстрыми на больших данных: виртуализация 10 000+ строк, LTTB-даунсэмплинг для графиков временных рядов и обновления по WebSocket с откликом быстрее 100 мс."
-  - "Внедрил Feature-Sliced Design и современный тулинг (Vite, TypeScript, Vitest, Playwright), чтобы большая кодовая база оставалась модульной и поддерживаемой."
-  - "Улучшил Core Web Vitals за счёт code-splitting, lazy loading и эффективного управления серверным состоянием (TanStack Query, Pinia, Redux)."
-stack: [React 19, Next.js, Vue 3, Nuxt, TypeScript, TanStack Query, Zustand, Pinia, WebRTC, WebSocket]
+  - "Основной автор фронтенда Bot Manager (~80% коммитов): Telegram-подобная операционная панель для американской транспортной компании с RBAC, устойчивым real-time (STOMP/WebSocket) и картой опасных зон."
+  - "Ключевой инженер Dyzlix — платформы управления топливом: живой трекинг на HERE Maps, виртуализированные списки, ратчет-гейты качества и 17 ADR."
+  - "С 2026 года выпускаю фичи в Load Up — крупной TMS на React 19 с живой доской грузов, звонками WebRTC и модулями автопарка и безопасности."
+  - "Стандартизировал тулинг между продуктами: Vite, TypeScript, TanStack Query, Vitest и Playwright, Conventional Commits и pre-push гейты качества."
+stack: [Vue 3, React 19, TypeScript, TanStack Query, Pinia, Zustand, STOMP/WebSocket, WebRTC, HERE Maps, Vitest, Playwright]

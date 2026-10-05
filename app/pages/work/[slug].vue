@@ -43,6 +43,7 @@ usePageSeo(() => ({
         <div>
           <dt class="eyebrow">{{ $t('work.role') }}</dt>
           <dd class="mt-2 text-sm">{{ project.role }}</dd>
+          <dd v-if="project.company" class="mt-1 text-sm text-muted">{{ project.company }}</dd>
         </div>
         <div>
           <dt class="eyebrow">{{ $t('work.year') }}</dt>
@@ -55,6 +56,8 @@ usePageSeo(() => ({
           </dd>
         </div>
       </dl>
+
+      <ConfidentialNotice v-if="project.confidential" class="mt-6 max-w-3xl" />
 
       <div class="mt-6 flex flex-wrap gap-3">
         <a
@@ -80,7 +83,9 @@ usePageSeo(() => ({
       </div>
     </header>
 
+    <!-- With a gallery, its first (full-width) shot already serves as the hero image. -->
     <img
+      v-if="!project.gallery?.length"
       :src="project.cover"
       :alt="project.title"
       class="mt-12 aspect-[16/9] w-full rounded-card border border-line object-cover"
@@ -92,6 +97,8 @@ usePageSeo(() => ({
         <dd class="mt-2 text-3xl font-semibold tracking-tight">{{ metric.value }}</dd>
       </div>
     </dl>
+
+    <ProjectGallery v-if="project.gallery?.length" :items="project.gallery" class="mt-12" />
 
     <ContentRenderer
       :value="project"

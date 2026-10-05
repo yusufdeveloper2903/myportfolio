@@ -6,7 +6,7 @@ role: "Open-source contributor"
 stack: [TypeScript, React Native, React Native Web, Onyx, Jest]
 cover: /images/projects/expensify.jpg
 featured: true
-order: 1
+order: 4
 links:
   live: "https://new.expensify.com"
   source: "https://github.com/Expensify/App/pulls?q=is%3Apr+author%3Ayusufdeveloper2903"

@@ -20,9 +20,14 @@ defineProps<{ project: ProjectsEnCollectionItem }>()
     <div class="flex min-w-0 flex-col">
       <div class="flex items-baseline justify-between gap-4">
         <h3 class="text-xl font-semibold tracking-tight">{{ project.title }}</h3>
-        <span class="font-mono text-sm text-subtle">{{ project.year }}</span>
+        <span class="flex shrink-0 items-center gap-2 font-mono text-sm text-subtle">
+          <PrivateBadge v-if="project.confidential" />
+          {{ project.year }}
+        </span>
       </div>
-      <p class="mt-1 text-sm text-muted">{{ project.role }}</p>
+      <p class="mt-1 text-sm text-muted">
+        {{ project.role }}<template v-if="project.company"> · {{ project.company }}</template>
+      </p>
       <p class="mt-3 text-pretty text-muted">{{ project.description }}</p>
       <div class="mt-4 flex flex-wrap gap-1.5">
         <TechBadge v-for="tech in project.stack" :key="tech">{{ tech }}</TechBadge>
