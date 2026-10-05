@@ -1,0 +1,8 @@
+[build]
+  command = "npm run generate"
+  publish = "dist"
+
+[build.environment]
+  # Nuxt 4 and the native SQLite connector need Node 22+; the site was set to Node 16.
+  NODE_VERSION = "22"
+  NUXT_PUBLIC_SITE_URL = "https://portfolioyusuf.netlify.app"
