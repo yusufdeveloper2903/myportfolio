@@ -72,7 +72,17 @@
     "copy": "Copy email",
     "copied": "Copied!",
     "sendEmail": "Send email",
-    "downloadCv": "Download CV"
+    "downloadCv": "Download CV",
+    "form": {
+      "title": "Write to me",
+      "hint": "Your message opens ready to send — in Gmail or your mail app.",
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Message",
+      "gmail": "Send via Gmail",
+      "app": "Other mail app",
+      "subject": "Project inquiry from {name}"
+    }
   },
   "palette": {
     "open": "Open command menu",

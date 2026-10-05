@@ -72,7 +72,17 @@
     "copy": "Emailni nusxalash",
     "copied": "Nusxalandi!",
     "sendEmail": "Email yuborish",
-    "downloadCv": "CV yuklab olish"
+    "downloadCv": "CV yuklab olish",
+    "form": {
+      "title": "Menga yozing",
+      "hint": "Xabaringiz yuborishga tayyor holda Gmail yoki pochta ilovangizda ochiladi.",
+      "name": "Ismingiz",
+      "email": "Emailingiz",
+      "message": "Xabar",
+      "gmail": "Gmail orqali yuborish",
+      "app": "Boshqa pochta ilovasi",
+      "subject": "{name}dan loyiha bo‘yicha murojaat"
+    }
   },
   "palette": {
     "open": "Buyruqlar menyusini ochish",

@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { site } from '~/data/site'
+
+const { open: openContact } = useContactDialog()
 </script>
 
 <template>
@@ -25,10 +27,10 @@ import { site } from '~/data/site'
         {{ site.email }}
       </a>
       <div class="relative mt-8 flex flex-wrap items-center justify-center gap-3">
-        <a :href="`mailto:${site.email}`" class="btn-primary">
+        <button type="button" class="btn-primary" @click="openContact">
           <Icon name="lucide:mail" class="size-4" />
           {{ $t('contact.sendEmail') }}
-        </a>
+        </button>
         <CopyEmailButton />
         <a :href="site.cvUrl" class="btn-ghost" download>
           <Icon name="lucide:file-down" class="size-4" />
@@ -37,5 +39,6 @@ import { site } from '~/data/site'
       </div>
       <SocialLinks class="relative mt-8 justify-center" />
     </div>
+    <ContactDialog />
   </section>
 </template>
