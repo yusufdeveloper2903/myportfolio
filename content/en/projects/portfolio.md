@@ -2,7 +2,7 @@
 title: Portfolio Platform
 description: A multilingual, statically generated portfolio with detailed case studies, screenshot galleries, a contact form and a ⌘K command palette — built as a small product, not a landing page.
 year: 2026
-role: Design & full-stack development
+role: Design & development
 stack: [Nuxt 4, TypeScript, Nuxt Content, Tailwind CSS v4, i18n, Vitest]
 cover: /images/projects/portfolio.jpg
 order: 11

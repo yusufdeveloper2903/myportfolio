@@ -18,7 +18,10 @@
   "hero": {
     "available": "Open to work",
     "unavailable": "Currently not taking projects",
-    "role": "Senior Full-Stack Engineer",
+    "role": {
+      "fullStack": "Senior Full-Stack Engineer",
+      "frontend": "Senior Frontend Engineer"
+    },
     "title": "I build fast, real-time web products — from architecture to production.",
     "subtitle": "5+ years building enterprise-grade web applications — from architecture decisions to production delivery. I lead frontend development at Longhorn Logistics Group, contribute to Expensify’s open-source app, and use AI every day to ship well-architected products faster.",
     "ctaWork": "View work",
@@ -112,8 +115,14 @@
     "builtWith": "Built with Nuxt, Tailwind CSS and Nuxt Content."
   },
   "seo": {
-    "title": "Yusuf Yuldashev — Senior Full-Stack Engineer",
-    "description": "Senior full-stack engineer building fast, scalable web products with TypeScript, Vue/Nuxt and Node.js.",
+    "title": {
+      "fullStack": "Yusuf Yuldashev — Senior Full-Stack Engineer",
+      "frontend": "Yusuf Yuldashev — Senior Frontend Engineer"
+    },
+    "description": {
+      "fullStack": "Senior full-stack engineer building fast, scalable web products with TypeScript, Vue/Nuxt and Node.js.",
+      "frontend": "Senior frontend engineer building fast, scalable web products with TypeScript, Vue/Nuxt and React."
+    },
     "workTitle": "Work",
     "workDescription": "Selected projects and case studies by Yusuf Yuldashev."
   },

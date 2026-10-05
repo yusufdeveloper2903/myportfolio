@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { roleKey } from '~/data/site'
+
 const { t } = useI18n()
 
 const [{ data: featured }, { data: experience }] = await Promise.all([
@@ -6,7 +8,7 @@ const [{ data: featured }, { data: experience }] = await Promise.all([
   useExperience(),
 ])
 
-usePageSeo(() => ({ description: t('seo.description') }))
+usePageSeo(() => ({ description: t(`seo.description.${roleKey}`) }))
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { site } from '~/data/site'
+import { roleKey, site } from '~/data/site'
 
 const { t } = useI18n()
 const head = useLocaleHead({ seo: true })
@@ -9,7 +9,7 @@ useHead({
   htmlAttrs: { lang: () => head.value.htmlAttrs?.lang },
   link: () => head.value.link ?? [],
   meta: () => head.value.meta ?? [],
-  titleTemplate: (title) => (title ? `${title} · ${site.name}` : t('seo.title')),
+  titleTemplate: (title) => (title ? `${title} · ${site.name}` : t(`seo.title.${roleKey}`)),
   // Keep scroll-reveal content visible when JavaScript is disabled.
   noscript: [
     { innerHTML: '<style>[data-reveal]{opacity:1!important;transform:none!important}</style>' },
@@ -21,7 +21,7 @@ useHead({
         '@context': 'https://schema.org',
         '@type': 'Person',
         name: site.name,
-        jobTitle: 'Senior Full-Stack Engineer',
+        jobTitle: t(`hero.role.${roleKey}`),
         email: `mailto:${site.email}`,
         telephone: site.phoneHref.replace('tel:', ''),
         url: siteUrl,

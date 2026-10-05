@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { site } from '~/data/site'
+import { roleKey, site } from '~/data/site'
 </script>
 
 <template>
@@ -28,7 +28,7 @@ import { site } from '~/data/site'
 
       <div class="mt-6 animate-fade-up [animation-delay:80ms]">
         <p class="text-lg font-medium">{{ site.name }}</p>
-        <p class="text-muted">{{ $t('hero.role') }}</p>
+        <p class="text-muted">{{ $t(`hero.role.${roleKey}`) }}</p>
       </div>
 
       <h1

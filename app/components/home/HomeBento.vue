@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ProjectsEnCollectionItem } from '@nuxt/content'
 
-import { site } from '~/data/site'
+import { site, visibleStack } from '~/data/site'
 
 const props = defineProps<{ projects: ProjectsEnCollectionItem[] }>()
 const primary = computed(() => props.projects[0])
@@ -66,8 +66,11 @@ const secondary = computed(() => props.projects[1])
       <!-- Stack -->
       <div v-reveal class="card p-6 sm:col-span-2">
         <p class="eyebrow">{{ $t('bento.stack') }}</p>
-        <dl class="mt-4 grid gap-4 sm:grid-cols-3">
-          <div v-for="group in site.stack" :key="group.key">
+        <dl
+          class="mt-4 grid gap-4"
+          :class="visibleStack.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'"
+        >
+          <div v-for="group in visibleStack" :key="group.key">
             <dt class="text-sm font-medium">{{ $t(`stack.groups.${group.key}`) }}</dt>
             <dd class="mt-2 flex flex-col gap-1.5">
               <span

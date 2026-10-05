@@ -2,7 +2,7 @@
 title: Портфолио-платформа
 description: Многоязычное статически генерируемое портфолио с подробными кейсами, галереями скриншотов, формой связи и меню команд ⌘K — сделано как небольшой продукт, а не лендинг.
 year: 2026
-role: Дизайн и full-stack разработка
+role: Дизайн и разработка
 stack: [Nuxt 4, TypeScript, Nuxt Content, Tailwind CSS v4, i18n, Vitest]
 cover: /images/projects/portfolio.jpg
 order: 11

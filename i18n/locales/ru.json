@@ -18,7 +18,10 @@
   "hero": {
     "available": "Открыт к работе",
     "unavailable": "Сейчас не беру новые проекты",
-    "role": "Senior Full-Stack Engineer",
+    "role": {
+      "fullStack": "Senior Full-Stack Engineer",
+      "frontend": "Senior Frontend Engineer"
+    },
     "title": "Создаю быстрые real-time веб-продукты — от архитектуры до продакшна.",
     "subtitle": "Более 5 лет создаю веб-приложения enterprise-уровня — от архитектурных решений до продакшна. Руковожу frontend-разработкой в Longhorn Logistics Group, контрибьючу в open-source приложение Expensify и каждый день использую AI, чтобы быстрее выпускать продукты с правильной архитектурой.",
     "ctaWork": "Смотреть проекты",
@@ -112,8 +115,14 @@
     "builtWith": "Сделано на Nuxt, Tailwind CSS и Nuxt Content."
   },
   "seo": {
-    "title": "Юсуф Юлдашев — Senior Full-Stack Engineer",
-    "description": "Senior full-stack инженер: быстрые и масштабируемые веб-продукты на TypeScript, Vue/Nuxt и Node.js.",
+    "title": {
+      "fullStack": "Юсуф Юлдашев — Senior Full-Stack Engineer",
+      "frontend": "Юсуф Юлдашев — Senior Frontend Engineer"
+    },
+    "description": {
+      "fullStack": "Senior full-stack инженер: быстрые и масштабируемые веб-продукты на TypeScript, Vue/Nuxt и Node.js.",
+      "frontend": "Senior frontend-инженер: быстрые и масштабируемые веб-продукты на TypeScript, Vue/Nuxt и React."
+    },
     "workTitle": "Проекты",
     "workDescription": "Избранные проекты и кейсы Юсуфа Юлдашева."
   },

@@ -2,7 +2,7 @@
 title: Portfolio platformasi
 description: Batafsil case study’lar, skrinshot galereyalari, aloqa formasi va ⌘K buyruqlar menyusiga ega ko‘p tilli, statik generatsiya qilingan portfolio — oddiy landing emas, kichik mahsulot sifatida qurilgan.
 year: 2026
-role: Dizayn va full-stack dasturlash
+role: Dizayn va dasturlash
 stack: [Nuxt 4, TypeScript, Nuxt Content, Tailwind CSS v4, i18n, Vitest]
 cover: /images/projects/portfolio.jpg
 order: 11

@@ -14,6 +14,14 @@ export interface StackGroup {
   items: { name: string; icon: string }[]
 }
 
+/**
+ * Feature flags. Flip one to `true` and redeploy to show that part of the site again.
+ */
+const features = {
+  /** Backend skills: the Backend stack column and the "Full-Stack" job title. */
+  backend: false,
+}
+
 export const site = {
   name: 'Yusuf Yuldashev',
   email: 'yusufdeveloper2903@gmail.com',
@@ -22,6 +30,7 @@ export const site = {
   timeZone: 'Asia/Tashkent',
   yearsOfExperience: 5,
   availableForWork: true,
+  features,
   cvUrl: '/resume/yusuf-yuldashev-cv.pdf',
   avatar: '/images/portrait.jpg',
   socials: [
@@ -82,3 +91,11 @@ export const site = {
     },
   ] satisfies StackGroup[],
 } as const
+
+/** i18n key for the job title under `hero.role` and `seo.*`. */
+export const roleKey = site.features.backend ? 'fullStack' : 'frontend'
+
+/** Stack groups to show, honouring the feature flags. */
+export const visibleStack = site.stack.filter(
+  (group) => site.features.backend || group.key !== 'backend',
+)
