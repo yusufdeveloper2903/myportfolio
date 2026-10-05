@@ -40,7 +40,11 @@
     "groups": {
       "frontend": "Frontend",
       "backend": "Backend",
-      "devops": "DevOps"
+      "devops": "DevOps",
+      "languages": "Языки и фреймворки",
+      "data": "Состояние и данные",
+      "ui": "UI и стили",
+      "tooling": "Тесты и инструменты"
     }
   },
   "work": {

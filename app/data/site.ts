@@ -10,7 +10,7 @@ export interface SocialLink {
 
 export interface StackGroup {
   /** i18n key under `stack.groups`. */
-  key: 'frontend' | 'backend' | 'devops'
+  key: 'frontend' | 'backend' | 'devops' | 'languages' | 'data' | 'ui' | 'tooling'
   items: { name: string; icon: string }[]
 }
 
@@ -90,12 +90,53 @@ export const site = {
       ],
     },
   ] satisfies StackGroup[],
+  /** Shown instead of `stack` while the backend/DevOps flag is off. */
+  frontendStack: [
+    {
+      key: 'languages',
+      items: [
+        { name: 'TypeScript', icon: 'simple-icons:typescript' },
+        { name: 'JavaScript (ES2023+)', icon: 'simple-icons:javascript' },
+        { name: 'React / Next.js', icon: 'simple-icons:react' },
+        { name: 'Vue / Nuxt', icon: 'simple-icons:vuedotjs' },
+        { name: 'HTML / CSS', icon: 'simple-icons:html5' },
+      ],
+    },
+    {
+      key: 'data',
+      items: [
+        { name: 'TanStack Query', icon: 'simple-icons:reactquery' },
+        { name: 'Pinia / Vuex', icon: 'lucide:layers' },
+        { name: 'Zustand', icon: 'lucide:layers' },
+        { name: 'REST / Axios', icon: 'simple-icons:axios' },
+        { name: 'WebSocket / WebRTC', icon: 'simple-icons:webrtc' },
+      ],
+    },
+    {
+      key: 'ui',
+      items: [
+        { name: 'Tailwind CSS', icon: 'simple-icons:tailwindcss' },
+        { name: 'Sass', icon: 'simple-icons:sass' },
+        { name: 'Design systems', icon: 'lucide:palette' },
+        { name: 'Accessibility', icon: 'lucide:accessibility' },
+        { name: 'Web performance', icon: 'lucide:gauge' },
+      ],
+    },
+    {
+      key: 'tooling',
+      items: [
+        { name: 'Vitest / Jest', icon: 'simple-icons:vitest' },
+        { name: 'Playwright', icon: 'simple-icons:playwright' },
+        { name: 'Vite', icon: 'simple-icons:vite' },
+        { name: 'ESLint / Prettier', icon: 'simple-icons:eslint' },
+        { name: 'Git', icon: 'simple-icons:git' },
+      ],
+    },
+  ] satisfies StackGroup[],
 } as const
 
 /** i18n key for the job title under `hero.role` and `seo.*`. */
 export const roleKey = site.features.backendDevops ? 'fullStack' : 'frontend'
 
 /** Stack groups to show, honouring the feature flags. */
-export const visibleStack = site.stack.filter(
-  (group) => site.features.backendDevops || group.key === 'frontend',
-)
+export const visibleStack = site.features.backendDevops ? site.stack : site.frontendStack

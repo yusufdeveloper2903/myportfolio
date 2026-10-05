@@ -40,7 +40,11 @@
     "groups": {
       "frontend": "Frontend",
       "backend": "Backend",
-      "devops": "DevOps"
+      "devops": "DevOps",
+      "languages": "Tillar va freymvorklar",
+      "data": "State va ma’lumotlar",
+      "ui": "UI va stillar",
+      "tooling": "Test va vositalar"
     }
   },
   "work": {
