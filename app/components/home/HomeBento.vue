@@ -83,6 +83,42 @@ const secondary = computed(() => props.projects[1])
         </dl>
       </div>
 
+      <!-- AI-assisted engineering -->
+      <div v-reveal class="card relative overflow-hidden p-6 sm:col-span-2 sm:p-8 lg:col-span-4">
+        <div
+          class="pointer-events-none absolute -top-24 -right-24 size-72 rounded-full bg-accent/15 blur-3xl"
+          aria-hidden="true"
+        />
+        <div class="relative grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+          <div>
+            <p class="eyebrow flex items-center gap-2">
+              <Icon name="lucide:sparkles" class="size-3.5 text-accent" />
+              {{ $t('ai.eyebrow') }}
+            </p>
+            <h3 class="mt-3 text-2xl font-semibold tracking-tight text-balance">
+              {{ $t('ai.title') }}
+            </h3>
+            <p class="mt-3 text-pretty text-muted">{{ $t('ai.text') }}</p>
+            <ul class="mt-5 grid gap-2 text-sm">
+              <li v-for="index in 3" :key="index" class="flex gap-2.5">
+                <Icon name="lucide:check" class="mt-0.5 size-4 shrink-0 text-accent" />
+                <span>{{ $t(`ai.points.${index - 1}`) }}</span>
+              </li>
+            </ul>
+          </div>
+          <ul class="flex flex-wrap gap-2 lg:justify-end">
+            <li
+              v-for="model in site.aiModels"
+              :key="model.name"
+              class="flex items-center gap-2 rounded-full border border-line bg-bg px-3.5 py-2 text-sm"
+            >
+              <Icon :name="model.icon" class="size-4" />
+              {{ model.name }}
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <!-- Companies -->
       <div v-reveal class="card flex flex-col justify-between p-6 sm:col-span-2">
         <p class="eyebrow">{{ $t('bento.companies') }}</p>

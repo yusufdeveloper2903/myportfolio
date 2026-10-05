@@ -16,11 +16,11 @@
     "label": "Language"
   },
   "hero": {
-    "available": "Available for new projects",
+    "available": "Open to work · Senior / Lead frontend roles",
     "unavailable": "Currently not taking projects",
     "role": "Senior Full-Stack Engineer",
     "title": "I build fast, real-time web products — from architecture to production.",
-    "subtitle": "5+ years building enterprise-grade web applications — from architecture decisions to production delivery. I lead frontend development at Longhorn Logistics Group and contribute to Expensify’s open-source app.",
+    "subtitle": "5+ years building enterprise-grade web applications — from architecture decisions to production delivery. I lead frontend development at Longhorn Logistics Group, contribute to Expensify’s open-source app, and use AI every day to ship well-architected products faster.",
     "ctaWork": "View work",
     "ctaContact": "Get in touch"
   },
@@ -122,5 +122,15 @@
     "notFoundText": "The page you are looking for doesn’t exist or has been moved.",
     "generic": "Something went wrong",
     "home": "Back to home"
+  },
+  "ai": {
+    "eyebrow": "AI-assisted engineering",
+    "title": "I use AI effectively in my daily work",
+    "text": "I have worked with all the major models and learned to write precise prompts. With AI I design and build projects on the right architecture — faster, without giving up code quality.",
+    "points": [
+      "Hands-on with Claude, GPT, Gemini and other leading models",
+      "Prompt engineering: clear context, constraints and review loops",
+      "Architecture-first: AI accelerates the work, I own the design and quality"
+    ]
   }
 }

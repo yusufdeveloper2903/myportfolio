@@ -40,6 +40,15 @@ export const site = {
     'Invan · tiin',
     'SQB Bank',
   ],
+  aiModels: [
+    { name: 'Claude', icon: 'simple-icons:claude' },
+    { name: 'GPT', icon: 'simple-icons:openai' },
+    { name: 'Gemini', icon: 'simple-icons:googlegemini' },
+    { name: 'DeepSeek', icon: 'simple-icons:deepseek' },
+    { name: 'Mistral', icon: 'simple-icons:mistralai' },
+    { name: 'Copilot', icon: 'simple-icons:githubcopilot' },
+    { name: 'Cursor', icon: 'simple-icons:cursor' },
+  ],
   stack: [
     {
       key: 'frontend',
