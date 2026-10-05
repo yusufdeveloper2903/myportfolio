@@ -5,13 +5,10 @@ import { site } from '~/data/site'
 <template>
   <NuxtLinkLocale
     to="/"
-    class="group inline-flex items-center gap-3 rounded-lg"
+    class="flex flex-col rounded-lg leading-tight"
     :aria-label="`${site.name} — ${$t('nav.home')}`"
   >
-    <LogoMark class="size-8 transition-transform duration-300 group-hover:-rotate-6" />
-    <span class="hidden flex-col leading-tight sm:flex">
-      <span class="text-[15px] font-semibold tracking-tight">{{ site.name }}</span>
-      <span class="font-mono text-[11px] text-subtle">{{ $t('hero.role') }}</span>
-    </span>
+    <span class="text-[15px] font-semibold tracking-tight">{{ site.name }}</span>
+    <span class="hidden font-mono text-[11px] text-subtle sm:block">{{ $t('hero.role') }}</span>
   </NuxtLinkLocale>
 </template>
