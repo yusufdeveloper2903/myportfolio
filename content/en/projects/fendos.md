@@ -1,13 +1,11 @@
 ---
-# TODO: confirm the year, role and stack; add metrics if you have them.
 title: Fendos
 description: A movie discovery website where film lovers can explore titles, cast details and the stories behind their favourite movies.
 year: 2022
 role: Frontend development
 stack: [Vue.js, JavaScript, Sass, REST API]
 cover: /images/projects/fendos.jpg
-featured: true
-order: 2
+order: 6
 links:
   live: https://netfmovies.netlify.app
 ---

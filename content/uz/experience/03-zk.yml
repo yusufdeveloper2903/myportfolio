@@ -1,0 +1,12 @@
+company: "Zamonaviy Kommunikatsiyalar"
+role: "Frontend Developer (Vue.js)"
+url: https://zk.uz
+location: "Toshkent, O‘zbekiston"
+start: '2022-05'
+end: '2024-09'
+order: 3
+highlights:
+  - "Banklar va savdo korxonalari uchun CRM tizimlarini yaratdim va qo‘llab-quvvatladim."
+  - "Mijoz talablari asosida veb-saytlar va ilovalar uchun foydalanuvchi interfeyslarini ishlab chiqdim va integratsiya qildim."
+  - "Dizaynerlar va backend muhandislar bilan birga interfeyslarning qulayligi va tezligini optimallashtirdim."
+stack: [Vue.js, JavaScript, TypeScript, Tailwind CSS]

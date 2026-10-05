@@ -1,0 +1,9 @@
+company: "Expensify (open source)"
+role: "Open-source contributor"
+location: "Masofaviy"
+start: '2026-05'
+order: 2
+highlights:
+  - "Expensify’ning web, iOS va Android’da ishlaydigan production React Native ilovasiga 25 ta pull request’im merge qilingan."
+  - "Xarajat hisobotlari, qidiruv, offline/optimistik yangilanishlar, workspace boshqaruvi va navigatsiya bo‘yicha xatolarni tuzatdim va funksiyalar qo‘shdim."
+stack: [TypeScript, React Native, React Native Web, Onyx, Jest]

@@ -1,0 +1,9 @@
+company: "Invan"
+role: "Frontend-разработчик (Vue.js)"
+location: "Ташкент, Узбекистан"
+start: '2022-09'
+end: '2022-12'
+order: 4
+highlights:
+  - "Исправлял ошибки в production-проектах и разрабатывал новые модули для продуктов в сфере ресторанов и общепита."
+stack: [Vue.js, JavaScript]

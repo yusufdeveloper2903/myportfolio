@@ -17,13 +17,12 @@ export interface StackGroup {
 export const site = {
   name: 'Yusuf Yuldashev',
   monogram: 'Y.',
-  email: 'yusufyuldashev2903@gmail.com',
+  email: 'yusufdeveloper2903@gmail.com',
   timeZone: 'Asia/Tashkent',
-  // TODO: set your real number of years in the industry.
   yearsOfExperience: 5,
   availableForWork: true,
   cvUrl: '/resume/yusuf-yuldashev-cv.pdf',
-  avatar: '/images/portrait.png',
+  avatar: '/images/portrait.jpg',
   socials: [
     { name: 'GitHub', url: 'https://github.com/yusufdeveloper2903', icon: 'simple-icons:github' },
     {
@@ -31,30 +30,31 @@ export const site = {
       url: 'https://www.linkedin.com/in/yusuf-yuldashev-468a32231/',
       icon: 'simple-icons:linkedin',
     },
-    { name: 'Telegram', url: 'https://t.me/yusufyuldashev', icon: 'simple-icons:telegram' },
+    { name: 'Telegram', url: 'https://t.me/yusufnfg', icon: 'simple-icons:telegram' },
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/yusuf__0_2/',
       icon: 'simple-icons:instagram',
     },
   ] satisfies SocialLink[],
-  // TODO: keep only the technologies you actually use in production.
   stack: [
     {
       key: 'frontend',
       items: [
         { name: 'TypeScript', icon: 'simple-icons:typescript' },
-        { name: 'Vue', icon: 'simple-icons:vuedotjs' },
-        { name: 'Nuxt', icon: 'simple-icons:nuxt' },
-        { name: 'Tailwind CSS', icon: 'simple-icons:tailwindcss' },
+        { name: 'React / Next.js', icon: 'simple-icons:react' },
+        { name: 'Vue / Nuxt', icon: 'simple-icons:vuedotjs' },
+        { name: 'TanStack Query', icon: 'simple-icons:reactquery' },
+        { name: 'WebSocket / WebRTC', icon: 'simple-icons:webrtc' },
       ],
     },
     {
       key: 'backend',
       items: [
         { name: 'Node.js', icon: 'simple-icons:nodedotjs' },
-        { name: 'NestJS', icon: 'simple-icons:nestjs' },
+        { name: 'NestJS / Express', icon: 'simple-icons:nestjs' },
         { name: 'PostgreSQL', icon: 'simple-icons:postgresql' },
+        { name: 'MongoDB', icon: 'simple-icons:mongodb' },
         { name: 'Redis', icon: 'simple-icons:redis' },
       ],
     },
@@ -63,8 +63,9 @@ export const site = {
       items: [
         { name: 'Docker', icon: 'simple-icons:docker' },
         { name: 'GitHub Actions', icon: 'simple-icons:githubactions' },
-        { name: 'Linux', icon: 'simple-icons:linux' },
         { name: 'Nginx', icon: 'simple-icons:nginx' },
+        { name: 'Vitest', icon: 'simple-icons:vitest' },
+        { name: 'Playwright', icon: 'simple-icons:playwright' },
       ],
     },
   ] satisfies StackGroup[],

@@ -1,12 +1,11 @@
 ---
-# TODO: confirm the year, role and stack; add metrics if you have them.
 title: Power Yoga
 description: A website for an online yoga service offering themed courses as recurring classes or single sessions.
 year: 2022
 role: Frontend development
 stack: [HTML, Sass, JavaScript]
 cover: /images/projects/power-yoga.jpg
-order: 4
+order: 8
 links:
   live: https://yoga11.netlify.app
 ---

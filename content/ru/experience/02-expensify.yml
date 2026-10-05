@@ -1,0 +1,9 @@
+company: "Expensify (open source)"
+role: "Open-source контрибьютор"
+location: "Удалённо"
+start: '2026-05'
+order: 2
+highlights:
+  - "25 pull request’ов смержено в production-приложение Expensify на React Native, которое работает в вебе, на iOS и Android."
+  - "Исправлял ошибки и выпускал фичи в отчётах о расходах, поиске, офлайн/оптимистичных обновлениях, управлении воркспейсами и навигации."
+stack: [TypeScript, React Native, React Native Web, Onyx, Jest]

@@ -5,10 +5,10 @@ year: 2022
 role: Frontend dasturlash
 stack: [Vue.js, JavaScript, Sass]
 cover: /images/projects/manual.jpg
-featured: true
-order: 3
+order: 7
 links:
   live: https://themanual.netlify.app
+  source: https://github.com/yusufdeveloper2903/manual
 ---
 
 ## Muammo

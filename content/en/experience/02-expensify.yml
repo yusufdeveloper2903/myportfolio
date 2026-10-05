@@ -1,0 +1,9 @@
+company: "Expensify (open source)"
+role: "Open-source contributor"
+location: "Remote"
+start: '2026-05'
+order: 2
+highlights:
+  - "25 pull requests merged into Expensify’s production React Native app, used across web, iOS and Android."
+  - "Fixed and shipped features across expense reports, search, offline/optimistic updates, workspace management and navigation."
+stack: [TypeScript, React Native, React Native Web, Onyx, Jest]

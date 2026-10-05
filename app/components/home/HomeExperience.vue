@@ -23,7 +23,7 @@ const { t, locale } = useI18n()
         </p>
         <h3 class="mt-2 text-lg font-semibold">
           {{ item.role }}
-          <span class="text-muted">·</span>
+          <span class="mx-1.5 text-muted" aria-hidden="true">·</span>
           <a
             v-if="item.url"
             :href="item.url"

@@ -1,15 +1,14 @@
 ---
-# TODO: confirm the year, role and stack; add metrics if you have them.
 title: Manual
 description: A health information website presenting independent, up-to-date medicine information in a clear format for consumers and professionals.
 year: 2022
 role: Frontend development
 stack: [Vue.js, JavaScript, Sass]
 cover: /images/projects/manual.jpg
-featured: true
-order: 3
+order: 7
 links:
   live: https://themanual.netlify.app
+  source: https://github.com/yusufdeveloper2903/manual
 ---
 
 ## Problem

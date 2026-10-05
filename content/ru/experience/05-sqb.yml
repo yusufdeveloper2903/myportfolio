@@ -1,0 +1,9 @@
+company: "SQB Construction"
+role: "Стажёр-программист (Vue.js)"
+location: "Ташкент, Узбекистан"
+start: '2021-01'
+end: '2021-09'
+order: 5
+highlights:
+  - "Изучил Vue.js на практике и разрабатывал компоненты для сайтов компании под руководством senior-разработчика."
+stack: [Vue.js, JavaScript, HTML, CSS]

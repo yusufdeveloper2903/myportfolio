@@ -1,0 +1,9 @@
+company: "SQB Construction"
+role: "Stajyor dasturchi (Vue.js)"
+location: "Toshkent, O‘zbekiston"
+start: '2021-01'
+end: '2021-09'
+order: 5
+highlights:
+  - "Senior dasturchi rahbarligida Vue.js’ni amalda o‘rgandim va kompaniya saytlari uchun komponentlar yaratdim."
+stack: [Vue.js, JavaScript, HTML, CSS]
