@@ -3,13 +3,15 @@ import { site } from '~/data/site'
 </script>
 
 <template>
-  <NuxtLinkLocale to="/" class="group inline-flex items-center gap-2.5 font-semibold">
-    <span
-      class="grid size-8 place-items-center rounded-lg bg-fg text-sm text-bg transition-transform group-hover:-rotate-6"
-      aria-hidden="true"
-    >
-      {{ site.monogram }}
+  <NuxtLinkLocale
+    to="/"
+    class="group inline-flex items-center gap-3 rounded-lg"
+    :aria-label="`${site.name} — ${$t('nav.home')}`"
+  >
+    <LogoMark class="size-8 transition-transform duration-300 group-hover:-rotate-6" />
+    <span class="hidden flex-col leading-tight sm:flex">
+      <span class="text-[15px] font-semibold tracking-tight">{{ site.name }}</span>
+      <span class="font-mono text-[11px] text-subtle">{{ $t('hero.role') }}</span>
     </span>
-    <span class="hidden sm:inline">{{ site.name }}</span>
   </NuxtLinkLocale>
 </template>

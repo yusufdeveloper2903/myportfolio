@@ -16,7 +16,6 @@ export interface StackGroup {
 
 export const site = {
   name: 'Yusuf Yuldashev',
-  monogram: 'Y.',
   email: 'yusufdeveloper2903@gmail.com',
   timeZone: 'Asia/Tashkent',
   yearsOfExperience: 5,
